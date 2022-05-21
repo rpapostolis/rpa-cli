@@ -1,0 +1,20 @@
+{
+  "profiles": {
+    "RPACLI -CSV": {
+      "commandName": "Project",
+      "commandLineArgs": "get-actions -u myname@mytenant.onmicrosoft.com -b 10 -t CSV -s https://[myorg].crm[region].dynamics.com -er true -c true"
+    },
+    "RPACLI -AutoCoE": {
+      "commandName": "Project",
+      "commandLineArgs": "get-actions -u myname@mytenant.onmicrosoft.com -b 10 -t AutoCoE -s https://[myorg].crm.dynamics.com -te https://[myorg].crm[region].dynamics.com -ti 7a74e5d3-7ff3-4bc4-b7bb-37b1428c5d4a -er true -c true "
+    },
+    "RPACLI -Runs": {
+      "commandName": "Project",
+      "commandLineArgs": "get-runs -u myname@mytenant.onmicrosoft.com -s https://[myorg].crm[region].dynamics.com -d 17eb9a9c-3198-4a99-ac99-da5ea0da2cda"
+    },
+    "RPACLI -Clone": {
+      "commandName": "Project",
+      "commandLineArgs": "clone-desktop-flows -u myname@mytenant.onmicrosoft.com -s https://[myorg].crm[region].dynamics.com -d 39069fe2-e299-4cf9-99c3-999aeafcf999 -c 100 -b 10"
+    }
+  }
+}

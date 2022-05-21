@@ -1,0 +1,3816 @@
+{
+  "Modules": [
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Connect to server",
+          "Id": "ConnectToServer",
+          "SelectorIds": [
+            "ActiveDirectory.ConnectToServer.ConnectToServer",
+            "ActiveDirectory.ConnectToServer.ConnectToServerWithAuthentication"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create user",
+          "Id": "CreateUser",
+          "SelectorIds": [
+            "ActiveDirectory.CreateUser"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get user info",
+          "Id": "GetUserInfo",
+          "SelectorIds": [
+            "ActiveDirectory.GetUserInfo"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Modify user",
+          "Id": "ModifyUser",
+          "SelectorIds": [
+            "ActiveDirectory.ModifyUser.EnableUser",
+            "ActiveDirectory.ModifyUser.DisableUser",
+            "ActiveDirectory.ModifyUser.RenameUser",
+            "ActiveDirectory.ModifyUser.DeleteUser",
+            "ActiveDirectory.ModifyUser.ResetUserPassword"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Unlock user",
+          "Id": "UnlockUser",
+          "SelectorIds": [
+            "ActiveDirectory.UnlockUser"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Update user info",
+          "Id": "UpdateUserInfo",
+          "SelectorIds": [
+            "ActiveDirectory.UpdateUserInfo"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create group",
+          "Id": "CreateGroup",
+          "SelectorIds": [
+            "ActiveDirectory.CreateGroup"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get group info",
+          "Id": "GetGroupInfo",
+          "SelectorIds": [
+            "ActiveDirectory.GetGroupInfo"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get group members",
+          "Id": "GetGroupMembers",
+          "SelectorIds": [
+            "ActiveDirectory.GetGroupMembers"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Modify group",
+          "Id": "ModifyGroup",
+          "SelectorIds": [
+            "ActiveDirectory.ModifyGroup.RenameGroup",
+            "ActiveDirectory.ModifyGroup.DeleteGroup",
+            "ActiveDirectory.ModifyGroup.AddUserToGroup",
+            "ActiveDirectory.ModifyGroup.RemoveUserFromGroup"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create object",
+          "Id": "CreateObject",
+          "SelectorIds": [
+            "ActiveDirectory.CreateObject"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete object",
+          "Id": "DeleteObject",
+          "SelectorIds": [
+            "ActiveDirectory.DeleteObject"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Move object",
+          "Id": "MoveObject",
+          "SelectorIds": [
+            "ActiveDirectory.MoveObject"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Rename object",
+          "Id": "RenameObject",
+          "SelectorIds": [
+            "ActiveDirectory.RenameObject"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Close connection",
+          "Id": "CloseConnection",
+          "SelectorIds": [
+            "ActiveDirectory.CloseConnection"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Active Directory",
+      "Id": "ActiveDirectory",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Create EC2 session",
+          "Id": "CreateEc2Session",
+          "SelectorIds": [
+            "AWS.CreateEc2Session.CreateEc2SessionWithAccessKeys",
+            "AWS.CreateEc2Session.CreateEc2SessionWithProfile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "End EC2 session",
+          "Id": "EndEC2Session",
+          "SelectorIds": [
+            "AWS.EndEC2Session"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Start EC2 instance",
+          "Id": "StartEC2Instance",
+          "SelectorIds": [
+            "AWS.StartEC2Instance"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Stop EC2 instance",
+          "Id": "StopEC2Instance",
+          "SelectorIds": [
+            "AWS.StopEC2Instance"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Reboot EC2 instance",
+          "Id": "RebootEC2Instance",
+          "SelectorIds": [
+            "AWS.RebootEC2Instance"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get available EC2 instances",
+          "Id": "GetAvailableEC2Instances",
+          "SelectorIds": [
+            "AWS.GetAvailableEC2Instances"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Describe instances",
+          "Id": "DescribeEC2Instance",
+          "SelectorIds": [
+            "AWS.DescribeEC2Instance"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create volume",
+          "Id": "CreateVolume",
+          "SelectorIds": [
+            "AWS.CreateVolume.CreateVolume",
+            "AWS.CreateVolume.CreateVolumeFromSnapshot"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Attach volume",
+          "Id": "AttachVolume",
+          "SelectorIds": [
+            "AWS.AttachVolume"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Detach volume",
+          "Id": "DetachVolume",
+          "SelectorIds": [
+            "AWS.DetachVolume"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Describe volumes",
+          "Id": "DescribeVolumes",
+          "SelectorIds": [
+            "AWS.DescribeVolumes.DescribeAllVolumes",
+            "AWS.DescribeVolumes.DescribeVolumesByInstance",
+            "AWS.DescribeVolumes.DescribeVolumesByIds"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete volume",
+          "Id": "DeleteVolume",
+          "SelectorIds": [
+            "AWS.DeleteVolume"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create snapshot",
+          "Id": "CreateSnapshot",
+          "SelectorIds": [
+            "AWS.CreateSnapshot"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Describe snapshots",
+          "Id": "DescribeSnapshots",
+          "SelectorIds": [
+            "AWS.DescribeSnapshots.DescribeAllSnapshots",
+            "AWS.DescribeSnapshots.DescribeSnapshotsById",
+            "AWS.DescribeSnapshots.DescribeSnapshotsByOwnerId",
+            "AWS.DescribeSnapshots.DescribeSnapshotsByRestorableUserId",
+            "AWS.DescribeSnapshots.DescribeSnapshotsByCustomFilter"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete snapshot",
+          "Id": "DeleteSnapshot",
+          "SelectorIds": [
+            "AWS.DeleteSnapshot"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "AWS",
+      "Id": "AWS",
+      "ModuleSource": "3rd Party"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Create session",
+          "Id": "CreateSession",
+          "SelectorIds": [
+            "Azure.CreateSession.CreateSessionViaServicePrincipal",
+            "Azure.CreateSession.CreateSessionViaFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get subscriptions",
+          "Id": "GetSubscriptions",
+          "SelectorIds": [
+            "Azure.GetSubscriptions"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get resource groups",
+          "Id": "GetResourceGroups",
+          "SelectorIds": [
+            "Azure.GetResourceGroups"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create resource group",
+          "Id": "CreateResourceGroup",
+          "SelectorIds": [
+            "Azure.CreateResourceGroup"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete resource group",
+          "Id": "DeleteResourceGroup",
+          "SelectorIds": [
+            "Azure.DeleteResourceGroup"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get virtual machines",
+          "Id": "GetVirtualMachines",
+          "SelectorIds": [
+            "Azure.GetVirtualMachines"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Describe virtual machine",
+          "Id": "DescribeVirtualMachine",
+          "SelectorIds": [
+            "Azure.DescribeVirtualMachine.DescribeAllVirtualMachines",
+            "Azure.DescribeVirtualMachine.DescribeVirtualMachinesByResourceGroup",
+            "Azure.DescribeVirtualMachine.DescribeVirtualMachinesByName",
+            "Azure.DescribeVirtualMachine.DescribeVirtualMachinesByNameAndResourceGroup"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Start virtual machine",
+          "Id": "StartVirtualMachine",
+          "SelectorIds": [
+            "Azure.StartVirtualMachine"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Stop virtual machine",
+          "Id": "StopVirtualMachine",
+          "SelectorIds": [
+            "Azure.StopVirtualMachine"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Shut down virtual machine",
+          "Id": "ShutDownVirtualMachine",
+          "SelectorIds": [
+            "Azure.ShutDownVirtualMachine"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Restart virtual machine",
+          "Id": "RestartVirtualMachine",
+          "SelectorIds": [
+            "Azure.RestartVirtualMachine"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get disks",
+          "Id": "GetDisks",
+          "SelectorIds": [
+            "Azure.GetDisks.GetAllDisks",
+            "Azure.GetDisks.GetDisksByResourceGroup",
+            "Azure.GetDisks.GetDisksByName",
+            "Azure.GetDisks.GetDisksByNameAndResourceGroup"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Attach disk",
+          "Id": "AttachDisk",
+          "SelectorIds": [
+            "Azure.AttachDisk.AttachManagedDisk",
+            "Azure.AttachDisk.AttachUnManagedDisk"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Detach disk",
+          "Id": "DetachDisk",
+          "SelectorIds": [
+            "Azure.DetachDisk"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create managed disk",
+          "Id": "CreateManagedDisk",
+          "SelectorIds": [
+            "Azure.CreateManagedDisk.CreateManagedDisk",
+            "Azure.CreateManagedDisk.CreateManagedDiskFromSnapshot",
+            "Azure.CreateManagedDisk.CreateManagedDiskFromStorageBlob"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete disk",
+          "Id": "DeleteDisk",
+          "SelectorIds": [
+            "Azure.DeleteDisk"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get snapshots",
+          "Id": "GetSnapshots",
+          "SelectorIds": [
+            "Azure.GetSnapshots.GetAllSnapshots",
+            "Azure.GetSnapshots.GetSnapshotsByResourceGroup",
+            "Azure.GetSnapshots.GetSnapshotsByName",
+            "Azure.GetSnapshots.GetSnapshotsByNameAndResourceGroup"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create snapshot",
+          "Id": "CreateSnapshot",
+          "SelectorIds": [
+            "Azure.CreateSnapshot"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete snapshot",
+          "Id": "DeleteSnapshot",
+          "SelectorIds": [
+            "Azure.DeleteSnapshot"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "End session",
+          "Id": "EndSession",
+          "SelectorIds": [
+            "Azure.EndSession"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Azure",
+      "Id": "Azure",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Get clipboard text",
+          "Id": "GetText",
+          "SelectorIds": [
+            "Clipboard.GetText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set clipboard text",
+          "Id": "SetText",
+          "SelectorIds": [
+            "Clipboard.SetText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Clear clipboard contents",
+          "Id": "Clear",
+          "SelectorIds": [
+            "Clipboard.Clear"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Clipboard",
+      "Id": "Clipboard",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Open CMD session",
+          "Id": "Open",
+          "SelectorIds": [
+            "Cmd.Open.OpenWithCodePage",
+            "Cmd.Open.Open"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Read from CMD session",
+          "Id": "ReadFromCmdSession",
+          "SelectorIds": [
+            "Cmd.ReadFromCmdSession.Read",
+            "Cmd.ReadFromCmdSession.ReadAndSplit"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Write to CMD session",
+          "Id": "Write",
+          "SelectorIds": [
+            "Cmd.Write"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for text on CMD session",
+          "Id": "WaitForText",
+          "SelectorIds": [
+            "Cmd.WaitForText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Close CMD session",
+          "Id": "Close",
+          "SelectorIds": [
+            "Cmd.Close"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "CMD session",
+      "Id": "Cmd",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Label detection",
+          "Id": "LabelDetectionGoogle",
+          "SelectorIds": [
+            "GoogleCognitive.LabelDetectionGoogle.LabelDetectionFromFile",
+            "GoogleCognitive.LabelDetectionGoogle.LabelDetectionFromGCS"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Landmark detection",
+          "Id": "LandmarkDetectionGoogle",
+          "SelectorIds": [
+            "GoogleCognitive.LandmarkDetectionGoogle.LandmarkDetectionFromFile",
+            "GoogleCognitive.LandmarkDetectionGoogle.LandmarkDetectionFromGCS"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Text Detection",
+          "Id": "TextDetectionGoogle",
+          "SelectorIds": [
+            "GoogleCognitive.TextDetectionGoogle.TextDetectionFromFile",
+            "GoogleCognitive.TextDetectionGoogle.TextDetectionFromGCS"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Logo detection",
+          "Id": "LogoDetectionGoogle",
+          "SelectorIds": [
+            "GoogleCognitive.LogoDetectionGoogle.LogoDetectionFromFile",
+            "GoogleCognitive.LogoDetectionGoogle.LogoDetectionFromGCS"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Image properties detection",
+          "Id": "ImagePropertiesDetectionGoogle",
+          "SelectorIds": [
+            "GoogleCognitive.ImagePropertiesDetectionGoogle.ImagePropertiesDetectionFromFile",
+            "GoogleCognitive.ImagePropertiesDetectionGoogle.ImagePropertiesDetectionFromGCS"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Safe search detection",
+          "Id": "SafeSearchDetectionGoogle",
+          "SelectorIds": [
+            "GoogleCognitive.SafeSearchDetectionGoogle.SafeSearchDetectionFromFile",
+            "GoogleCognitive.SafeSearchDetectionGoogle.SafeSearchDetectionFromGCS"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Analyze sentiment",
+          "Id": "AnalyzeSentimentGoogle",
+          "SelectorIds": [
+            "GoogleCognitive.AnalyzeSentimentGoogle.AnalyzeSentimentFromGCS",
+            "GoogleCognitive.AnalyzeSentimentGoogle.AnalyzeSentimentFromFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Analyze entities",
+          "Id": "AnalyzeEntitiesGoogle",
+          "SelectorIds": [
+            "GoogleCognitive.AnalyzeEntitiesGoogle.AnalyzeEntitiesFromGCS",
+            "GoogleCognitive.AnalyzeEntitiesGoogle.AnalyzeEntitiesFromFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Analyze syntax",
+          "Id": "AnalyzeSyntaxGoogle",
+          "SelectorIds": [
+            "GoogleCognitive.AnalyzeSyntaxGoogle.AnalyzeSyntaxFromGCS",
+            "GoogleCognitive.AnalyzeSyntaxGoogle.AnalyzeSyntaxFromFile"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Google cognitive",
+      "Id": "GoogleCognitive",
+      "ModuleSource": "3rd Party"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Classify Image",
+          "Id": "ClassifyImageIBM",
+          "SelectorIds": [
+            "IBMCognitive.ClassifyImageIBM.ClassifyImageFromFile",
+            "IBMCognitive.ClassifyImageIBM.ClassifyImageFromUrl"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Convert document",
+          "Id": "ConvertDocumentIBM",
+          "SelectorIds": [
+            "IBMCognitive.ConvertDocumentIBM.ConvertToAnswerUnits",
+            "IBMCognitive.ConvertDocumentIBM.ConvertToHtml",
+            "IBMCognitive.ConvertDocumentIBM.ConvertToText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Analyze tone",
+          "Id": "AnalyzeToneIBM",
+          "SelectorIds": [
+            "IBMCognitive.AnalyzeToneIBM.AnalyzeFromText",
+            "IBMCognitive.AnalyzeToneIBM.AnalyzeFromFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Translate",
+          "Id": "TranslateIBM",
+          "SelectorIds": [
+            "IBMCognitive.TranslateIBM.TranslateWithModelId",
+            "IBMCognitive.TranslateIBM.TranslateWithSourceAndTarget"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Identify language",
+          "Id": "IdentifyLanguageIBM",
+          "SelectorIds": [
+            "IBMCognitive.IdentifyLanguageIBM"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "IBM cognitive",
+      "Id": "IBMCognitive",
+      "ModuleSource": "3rd Party"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Analyze image",
+          "Id": "AnalyzeImageMicrosoft",
+          "SelectorIds": [
+            "MicrosoftCognitive.AnalyzeImageMicrosoft.AnalyzeImageFromUrl",
+            "MicrosoftCognitive.AnalyzeImageMicrosoft.AnalyzeImageFromFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Describe image",
+          "Id": "DescribeImageMicrosoft",
+          "SelectorIds": [
+            "MicrosoftCognitive.DescribeImageMicrosoft.DescribeImageFromUrl",
+            "MicrosoftCognitive.DescribeImageMicrosoft.DescribeImageFromFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "OCR",
+          "Id": "OCRMicrosoft",
+          "SelectorIds": [
+            "MicrosoftCognitive.OCRMicrosoft.OCRFromURL",
+            "MicrosoftCognitive.OCRMicrosoft.OCRFromFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Tag image",
+          "Id": "TagImageMicrosoft",
+          "SelectorIds": [
+            "MicrosoftCognitive.TagImageMicrosoft.TagImageFromFile",
+            "MicrosoftCognitive.TagImageMicrosoft.TagImageFromURL"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Detect language",
+          "Id": "DetectLanguage",
+          "SelectorIds": [
+            "MicrosoftCognitive.DetectLanguage"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Key phrases",
+          "Id": "KeyPhrasesMicrosoft",
+          "SelectorIds": [
+            "MicrosoftCognitive.KeyPhrasesMicrosoft"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Sentiment",
+          "Id": "SentimentMicrosoft",
+          "SelectorIds": [
+            "MicrosoftCognitive.SentimentMicrosoft"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Spell check",
+          "Id": "SpellCheckMicrosoft",
+          "SelectorIds": [
+            "MicrosoftCognitive.SpellCheckMicrosoft"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Microsoft cognitive",
+      "Id": "MicrosoftCognitive",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Zip files",
+          "Id": "ZipFiles",
+          "SelectorIds": [
+            "Compression.ZipFiles"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Unzip files",
+          "Id": "UnzipFiles",
+          "SelectorIds": [
+            "Compression.UnzipFiles"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Compression",
+      "Id": "Compression",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Encrypt text with AES",
+          "Id": "EncryptText",
+          "SelectorIds": [
+            "Cryptography.EncryptText.EncryptTextWithAES",
+            "Cryptography.EncryptText.EncryptTextWithAESUseIV",
+            "Cryptography.EncryptText.EncryptTextWithAESUseSalt",
+            "Cryptography.EncryptText.EncryptTextWithAESUseSaltAndIV"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Decrypt text with AES",
+          "Id": "DecryptText",
+          "SelectorIds": [
+            "Cryptography.DecryptText.DecryptTextWithAES",
+            "Cryptography.DecryptText.DecryptTextWithAESUseSalt",
+            "Cryptography.DecryptText.DecryptTextWithAESUseIV",
+            "Cryptography.DecryptText.DecryptTextWithAESUseSaltAndIV"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Encrypt from file with AES",
+          "Id": "EncryptFromFile",
+          "SelectorIds": [
+            "Cryptography.EncryptFromFile.EncryptFromFileWithAES",
+            "Cryptography.EncryptFromFile.EncryptFromFileWithAESUseIV",
+            "Cryptography.EncryptFromFile.EncryptFromFileWithAESUseSalt",
+            "Cryptography.EncryptFromFile.EncryptFromFileWithAESUseSaltAndIV"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Decrypt to file with AES",
+          "Id": "DecryptToFile",
+          "SelectorIds": [
+            "Cryptography.DecryptToFile.DecryptToFileWithAES",
+            "Cryptography.DecryptToFile.DecryptToFileWithAESUseSalt",
+            "Cryptography.DecryptToFile.DecryptToFileWithAESUseIV",
+            "Cryptography.DecryptToFile.DecryptToFileWithAESUseSaltAndIV"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Hash text",
+          "Id": "HashText",
+          "SelectorIds": [
+            "Cryptography.HashText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Hash from file",
+          "Id": "HashFromFile",
+          "SelectorIds": [
+            "Cryptography.HashFromFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Hash text with key",
+          "Id": "HashTextWithKey",
+          "SelectorIds": [
+            "Cryptography.HashTextWithKey"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Hash from file with key",
+          "Id": "HashFromFileWithKey",
+          "SelectorIds": [
+            "Cryptography.HashFromFileWithKey"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Cryptography",
+      "Id": "Cryptography",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Get password from CyberArk",
+          "Id": "GetPassword",
+          "SelectorIds": [
+            "CyberArk.GetPassword.GetPasswordWithFileCertificate",
+            "CyberArk.GetPassword.GetPassword",
+            "CyberArk.GetPassword.GetPasswordWithStoreCertificate"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "CyberArk",
+      "Id": "CyberArk",
+      "ModuleSource": "3rd Party"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Open SQL connection",
+          "Id": "Connect",
+          "SelectorIds": [
+            "Database.Connect"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Execute SQL statement",
+          "Id": "ExecuteSqlStatement",
+          "SelectorIds": [
+            "Database.ExecuteSqlStatement.ConnectAndExecute",
+            "Database.ExecuteSqlStatement.Execute"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Close SQL connection",
+          "Id": "Close",
+          "SelectorIds": [
+            "Database.Close"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Database",
+      "Id": "Database",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Add to datetime",
+          "Id": "Add",
+          "SelectorIds": [
+            "DateTime.Add"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Subtract dates",
+          "Id": "Subtract",
+          "SelectorIds": [
+            "DateTime.Subtract"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Get current date and time",
+          "Id": "GetCurrentDateTime",
+          "SelectorIds": [
+            "DateTime.GetCurrentDateTime.Local",
+            "DateTime.GetCurrentDateTime.Current"
+          ],
+          "DLPSupport": false
+        }
+      ],
+      "FriendlyName": "Date time",
+      "Id": "DateTime",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Display message",
+          "Id": "ShowMessageDialog",
+          "SelectorIds": [
+            "Display.ShowMessageDialog.ShowMessage",
+            "Display.ShowMessageDialog.ShowMessageWithTimeout"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Display input dialog",
+          "Id": "InputDialog",
+          "SelectorIds": [
+            "Display.InputDialog"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Display select date dialog",
+          "Id": "SelectDateDialog",
+          "SelectorIds": [
+            "Display.SelectDateDialog.SelectDateRange",
+            "Display.SelectDateDialog.SelectDate"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Display select from list dialog",
+          "Id": "SelectFromListDialog",
+          "SelectorIds": [
+            "Display.SelectFromListDialog.SelectFromList",
+            "Display.SelectFromListDialog.SelectItemsFromList",
+            "Display.SelectFromListDialog.SelectFromListOrInsertValue"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Display select file dialog",
+          "Id": "SelectFileDialog",
+          "SelectorIds": [
+            "Display.SelectFileDialog.SelectFile",
+            "Display.SelectFileDialog.SelectFiles"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Display select folder dialog",
+          "Id": "SelectFolder",
+          "SelectorIds": [
+            "Display.SelectFolder"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Display custom form",
+          "Id": "ShowCustomDialog",
+          "SelectorIds": [
+            "Display.ShowCustomDialog"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Message boxes",
+      "Id": "Display",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Retrieve email messages",
+          "Id": "RetrieveEmails",
+          "SelectorIds": [
+            "Email.RetrieveEmails.Retrieve",
+            "Email.RetrieveEmails.RetrieveAndSaveAttachments"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Process email messages",
+          "Id": "ProcessEmails",
+          "SelectorIds": [
+            "Email.ProcessEmails.Delete",
+            "Email.ProcessEmails.MarkAsUnread",
+            "Email.ProcessEmails.Move",
+            "Email.ProcessEmails.MarkAsUnreadAndMove"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Send email",
+          "Id": "SendEmail",
+          "SelectorIds": [
+            "Email.SendEmail.Send",
+            "Email.SendEmail.AuthenticateAndSend"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Email",
+      "Id": "Email",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Launch Excel",
+          "Id": "LaunchExcel",
+          "SelectorIds": [
+            "Excel.LaunchExcel.Launch",
+            "Excel.LaunchExcel.LaunchAndOpen",
+            "Excel.LaunchExcel.LaunchUnderExistingProcess",
+            "Excel.LaunchExcel.LaunchAndOpenUnderExistingProcess"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Attach to running Excel",
+          "Id": "Attach",
+          "SelectorIds": [
+            "Excel.Attach"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Read from Excel worksheet",
+          "Id": "ReadFromExcel",
+          "SelectorIds": [
+            "Excel.ReadFromExcel.Read",
+            "Excel.ReadFromExcel.ReadCell",
+            "Excel.ReadFromExcel.ReadCells",
+            "Excel.ReadFromExcel.ReadAllCells"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get active cell on Excel worksheet",
+          "Id": "GetActiveCell",
+          "SelectorIds": [
+            "Excel.GetActiveCell"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Save Excel",
+          "Id": "SaveExcel",
+          "SelectorIds": [
+            "Excel.SaveExcel.Save",
+            "Excel.SaveExcel.SaveAs"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Write to Excel worksheet",
+          "Id": "WriteToExcel",
+          "SelectorIds": [
+            "Excel.WriteToExcel.Write",
+            "Excel.WriteToExcel.WriteCell"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Close Excel",
+          "Id": "CloseExcel",
+          "SelectorIds": [
+            "Excel.CloseExcel.Close",
+            "Excel.CloseExcel.CloseAndSave",
+            "Excel.CloseExcel.CloseAndSaveAs"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set active Excel worksheet",
+          "Id": "SetActiveWorksheet",
+          "SelectorIds": [
+            "Excel.SetActiveWorksheet.ActivateWorksheetByIndex",
+            "Excel.SetActiveWorksheet.ActivateWorksheetByName"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Add new worksheet",
+          "Id": "AddWorksheet",
+          "SelectorIds": [
+            "Excel.AddWorksheet"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get first free column/row from Excel worksheet",
+          "Id": "GetFirstFreeColumnRow",
+          "SelectorIds": [
+            "Excel.GetFirstFreeColumnRow"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get column name on Excel worksheet",
+          "Id": "GetColumnName",
+          "SelectorIds": [
+            "Excel.GetColumnName"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Run Excel macro",
+          "Id": "RunMacro",
+          "SelectorIds": [
+            "Excel.RunMacro"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get active Excel worksheet",
+          "Id": "GetActiveWorksheet",
+          "SelectorIds": [
+            "Excel.GetActiveWorksheet"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get all Excel worksheets",
+          "Id": "GetAllWorksheets",
+          "SelectorIds": [
+            "Excel.GetAllWorksheets"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete Excel worksheet",
+          "Id": "DeleteWorksheet",
+          "SelectorIds": [
+            "Excel.DeleteWorksheet.DeleteWorksheetByIndex",
+            "Excel.DeleteWorksheet.DeleteWorksheetByName"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Rename Excel worksheet",
+          "Id": "RenameWorksheet",
+          "SelectorIds": [
+            "Excel.RenameWorksheet.RenameWorksheetWithIndex",
+            "Excel.RenameWorksheet.RenameWorksheetWithName"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Activate cell in Excel worksheet",
+          "Id": "ActivateCellInExcel",
+          "SelectorIds": [
+            "Excel.ActivateCellInExcel.ActivateCell",
+            "Excel.ActivateCellInExcel.ActivateCellRelativeTo"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Select cells in Excel worksheet",
+          "Id": "SelectCellsFromExcel",
+          "SelectorIds": [
+            "Excel.SelectCellsFromExcel.SelectCells",
+            "Excel.SelectCellsFromExcel.SelectCellsRelativeTo"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get selected cell range from Excel worksheet",
+          "Id": "GetSelectedCellRange",
+          "SelectorIds": [
+            "Excel.GetSelectedCellRange"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Copy cells from Excel worksheet",
+          "Id": "CopyCellsFromExcel",
+          "SelectorIds": [
+            "Excel.CopyCellsFromExcel.Copy",
+            "Excel.CopyCellsFromExcel.CopyCell",
+            "Excel.CopyCellsFromExcel.CopyCells",
+            "Excel.CopyCellsFromExcel.CopyAllCells"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Paste cells to Excel worksheet",
+          "Id": "PasteCellsToExcel",
+          "SelectorIds": [
+            "Excel.PasteCellsToExcel.Paste",
+            "Excel.PasteCellsToExcel.PasteAt"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete from Excel worksheet",
+          "Id": "DeleteCells",
+          "SelectorIds": [
+            "Excel.DeleteCells.DeleteCell",
+            "Excel.DeleteCells.DeleteCells"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Insert row to Excel worksheet",
+          "Id": "InsertRow",
+          "SelectorIds": [
+            "Excel.InsertRow"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete row from Excel worksheet",
+          "Id": "DeleteRow",
+          "SelectorIds": [
+            "Excel.DeleteRow"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Insert column to Excel worksheet",
+          "Id": "InsertColumn",
+          "SelectorIds": [
+            "Excel.InsertColumn"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete column from Excel worksheet",
+          "Id": "DeleteColumn",
+          "SelectorIds": [
+            "Excel.DeleteColumn"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Find and replace cells in Excel worksheet",
+          "Id": "FindAndReplace",
+          "SelectorIds": [
+            "Excel.FindAndReplace.FindSingle",
+            "Excel.FindAndReplace.FindAndReplaceSingle",
+            "Excel.FindAndReplace.FindAll",
+            "Excel.FindAndReplace.FindAndReplaceAll"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get first free row on column from Excel worksheet",
+          "Id": "GetFirstFreeRowOnColumn",
+          "SelectorIds": [
+            "Excel.GetFirstFreeRowOnColumn"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Excel",
+      "Id": "Excel",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Connect to Exchange server",
+          "Id": "ConnectToExchangeServer",
+          "SelectorIds": [
+            "Exchange.ConnectToExchangeServer.Connect",
+            "Exchange.ConnectToExchangeServer.ConnectToServer",
+            "Exchange.ConnectToExchangeServer.ConnectWithCredentials",
+            "Exchange.ConnectToExchangeServer.ConnectToServerWithCredentials"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Retrieve Exchange email messages",
+          "Id": "RetrieveExchangeMessages",
+          "SelectorIds": [
+            "Exchange.RetrieveExchangeMessages.RetrieveEmailsFromFolder",
+            "Exchange.RetrieveExchangeMessages.RetrieveEmailsFromFolderAndSaveAttachments",
+            "Exchange.RetrieveExchangeMessages.RetrieveEmailsFromAccountAndFolder",
+            "Exchange.RetrieveExchangeMessages.RetrieveEmailsFromAccountAndFolderAndSaveAttachments",
+            "Exchange.RetrieveExchangeMessages.RetrieveEmails",
+            "Exchange.RetrieveExchangeMessages.RetrieveEmailsAndSaveAttachments",
+            "Exchange.RetrieveExchangeMessages.RetrieveEmailsFromAccount",
+            "Exchange.RetrieveExchangeMessages.RetrieveEmailsFromAccountAndSaveAttachments"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Send Exchange email message",
+          "Id": "SendMessage",
+          "SelectorIds": [
+            "Exchange.SendMessage"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Process Exchange email messages",
+          "Id": "ProcessExchangeMessages",
+          "SelectorIds": [
+            "Exchange.ProcessExchangeMessages.MoveEmails",
+            "Exchange.ProcessExchangeMessages.MoveEmailsToAccount",
+            "Exchange.ProcessExchangeMessages.MoveEmailsToFolder",
+            "Exchange.ProcessExchangeMessages.MoveEmailsToAccountFolder",
+            "Exchange.ProcessExchangeMessages.DeleteEmails",
+            "Exchange.ProcessExchangeMessages.MarkEmailsAsUnread"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Exchange",
+      "Id": "Exchange",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "If file exists",
+          "Id": "IfFile",
+          "SelectorIds": [
+            "File.IfFile.Exists",
+            "File.IfFile.DoesNotExist"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for file",
+          "Id": "WaitForFile",
+          "SelectorIds": [
+            "File.WaitForFile.Created",
+            "File.WaitForFile.Deleted"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Copy file(s)",
+          "Id": "Copy",
+          "SelectorIds": [
+            "File.Copy"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Move file(s)",
+          "Id": "Move",
+          "SelectorIds": [
+            "File.Move"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete file(s)",
+          "Id": "Delete",
+          "SelectorIds": [
+            "File.Delete"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Rename file(s)",
+          "Id": "RenameFiles",
+          "SelectorIds": [
+            "File.RenameFiles.RenameAddDateOrTime",
+            "File.RenameFiles.RenameAddCustomDateTime",
+            "File.RenameFiles.RenameAddSequentialSuffix",
+            "File.RenameFiles.OverwriteWithSequentialSuffix",
+            "File.RenameFiles.Rename",
+            "File.RenameFiles.RenameAddText",
+            "File.RenameFiles.RenameRemoveText",
+            "File.RenameFiles.RenameReplaceText",
+            "File.RenameFiles.RenameChangeExtension"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Read text from file",
+          "Id": "ReadTextFromFile",
+          "SelectorIds": [
+            "File.ReadTextFromFile.ReadText",
+            "File.ReadTextFromFile.ReadTextAsList"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Write text to file",
+          "Id": "WriteText",
+          "SelectorIds": [
+            "File.WriteText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Read from CSV file",
+          "Id": "ReadFromCSVFile",
+          "SelectorIds": [
+            "File.ReadFromCSVFile.ReadCSV",
+            "File.ReadFromCSVFile.ReadCSVWithCustomSeparator",
+            "File.ReadFromCSVFile.ReadCSVWithFixedColumnWidths"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Write to CSV file",
+          "Id": "WriteToCSVFile",
+          "SelectorIds": [
+            "File.WriteToCSVFile.WriteCSV",
+            "File.WriteToCSVFile.WriteCSVWithCustomSeparator"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get file path part",
+          "Id": "GetPathPart",
+          "SelectorIds": [
+            "File.GetPathPart"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get temporary file",
+          "Id": "GetTempPath",
+          "SelectorIds": [
+            "File.GetTempPath"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Convert file to Base64",
+          "Id": "ConvertToBase64",
+          "SelectorIds": [
+            "File.ConvertToBase64"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Convert Base64 to file",
+          "Id": "ConvertFromBase64",
+          "SelectorIds": [
+            "File.ConvertFromBase64"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "File",
+      "Id": "File",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "If folder exists",
+          "Id": "IfFolderExists",
+          "SelectorIds": [
+            "Folder.IfFolderExists.Exists",
+            "Folder.IfFolderExists.DoesNotExist"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get files in folder",
+          "Id": "GetFiles",
+          "SelectorIds": [
+            "Folder.GetFiles"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get subfolders in folder",
+          "Id": "GetSubfolders",
+          "SelectorIds": [
+            "Folder.GetSubfolders"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create folder",
+          "Id": "Create",
+          "SelectorIds": [
+            "Folder.Create"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete folder",
+          "Id": "Delete",
+          "SelectorIds": [
+            "Folder.Delete"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Empty folder",
+          "Id": "Empty",
+          "SelectorIds": [
+            "Folder.Empty"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Copy folder",
+          "Id": "Copy",
+          "SelectorIds": [
+            "Folder.Copy"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Move folder",
+          "Id": "Move",
+          "SelectorIds": [
+            "Folder.Move"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Rename folder",
+          "Id": "Rename",
+          "SelectorIds": [
+            "Folder.Rename"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get special folder",
+          "Id": "GetSpecialFolder",
+          "SelectorIds": [
+            "Folder.GetSpecialFolder"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Folder",
+      "Id": "Folder",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Open FTP connection",
+          "Id": "OpenConnection",
+          "SelectorIds": [
+            "FTP.OpenConnection"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "List FTP directory",
+          "Id": "ListDirectory",
+          "SelectorIds": [
+            "FTP.ListDirectory"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Open secure FTP connection",
+          "Id": "OpenSecureConnection",
+          "SelectorIds": [
+            "FTP.OpenSecureConnection.ConnectWithSftpUsernameAndPassword",
+            "FTP.OpenSecureConnection.ConnectWithSftpPrivateKey",
+            "FTP.OpenSecureConnection.ConnectWithSftpPrivateKeyAndPassPhrase",
+            "FTP.OpenSecureConnection.ConnectWithFtpsExplicit",
+            "FTP.OpenSecureConnection.ConnectWithFtpsImplicit"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Close connection",
+          "Id": "CloseConnection",
+          "SelectorIds": [
+            "FTP.CloseConnection"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Change working directory",
+          "Id": "ChangeWorkingDirectory",
+          "SelectorIds": [
+            "FTP.ChangeWorkingDirectory"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Download file(s) from FTP",
+          "Id": "DownloadFiles",
+          "SelectorIds": [
+            "FTP.DownloadFiles"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Download folder(s) from FTP",
+          "Id": "DownloadFolders",
+          "SelectorIds": [
+            "FTP.DownloadFolders"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Upload File(s) to FTP",
+          "Id": "UploadFiles",
+          "SelectorIds": [
+            "FTP.UploadFiles"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Upload folder(s) to FTP",
+          "Id": "UploadFolders",
+          "SelectorIds": [
+            "FTP.UploadFolders"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete FTP file",
+          "Id": "DeleteFiles",
+          "SelectorIds": [
+            "FTP.DeleteFiles"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Rename FTP File",
+          "Id": "RenameFile",
+          "SelectorIds": [
+            "FTP.RenameFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create FTP directory",
+          "Id": "CreateDirectory",
+          "SelectorIds": [
+            "FTP.CreateDirectory"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete FTP directory",
+          "Id": "DeleteDirectory",
+          "SelectorIds": [
+            "FTP.DeleteDirectory"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Invoke FTP command",
+          "Id": "InvokeCommand",
+          "SelectorIds": [
+            "FTP.InvokeCommand"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Synchronize directories",
+          "Id": "SynchronizeDirectory",
+          "SelectorIds": [
+            "FTP.SynchronizeDirectory.SynchronizeUploadAll",
+            "FTP.SynchronizeDirectory.SynchronizeUploadIncludeFilter",
+            "FTP.SynchronizeDirectory.SynchronizeUploadExcludeFilter",
+            "FTP.SynchronizeDirectory.SynchronizeDownloadAll",
+            "FTP.SynchronizeDirectory.SynchronizeDownloadIncludeFilter",
+            "FTP.SynchronizeDirectory.SynchronizeDownloadExcludeFilter"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "FTP",
+      "Id": "FTP",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Block Input",
+          "Id": "BlockInput",
+          "SelectorIds": [
+            "MouseAndKeyboard.BlockInput"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get mouse position",
+          "Id": "GetMousePosition",
+          "SelectorIds": [
+            "MouseAndKeyboard.GetMousePosition"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Move mouse",
+          "Id": "MoveMouse",
+          "SelectorIds": [
+            "MouseAndKeyboard.MoveMouse"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Move mouse to image",
+          "Id": "MoveMouseToImage",
+          "SelectorIds": [
+            "MouseAndKeyboard.MoveMouseToImage.MoveMouseToImage",
+            "MouseAndKeyboard.MoveMouseToImage.ClickImage",
+            "MouseAndKeyboard.MoveMouseToImage.MoveMouseToImageOfSubregion",
+            "MouseAndKeyboard.MoveMouseToImage.ClickImageOfSubregion"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Move mouse to text on screen (OCR)",
+          "Id": "MoveMouseToTextOnScreenWithOCR",
+          "SelectorIds": [
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnSubregionOfScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnSubregionOfScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnSubregionRelativeToImageOfScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnSubregionRelativeToImageOfScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnSubregionOfScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnSubregionOfScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnSubregionRelativeToImageOfScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnSubregionRelativeToImageOfScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnSubregionOfScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnSubregionOfScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnSubregionRelativeToImageOfScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnSubregionRelativeToImageOfScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnSubregionOfScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnSubregionOfScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnSubregionRelativeToImageOfScreenWithTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnSubregionRelativeToImageOfScreenWithCustomTesseractOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnSubregionOfScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnSubregionOfScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnSubregionRelativeToImageOfScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.MoveMouseToTextOnSubregionRelativeToImageOfScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnSubregionOfScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnSubregionOfScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnSubregionRelativeToImageOfScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndMoveMouseToTextOnSubregionRelativeToImageOfScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnSubregionOfScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnSubregionOfScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnSubregionRelativeToImageOfScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.ClickTextOnSubregionRelativeToImageOfScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnSubregionOfScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnSubregionOfScreenWithWindowsOcr",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnSubregionRelativeToImageOfScreenWithOCR",
+            "MouseAndKeyboard.MoveMouseToTextOnScreenWithOCR.WaitForTextToAppearAndClickTextOnSubregionRelativeToImageOfScreenWithWindowsOcr"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Send mouse click",
+          "Id": "SendMouseClick",
+          "SelectorIds": [
+            "MouseAndKeyboard.SendMouseClick.Click",
+            "MouseAndKeyboard.SendMouseClick.ClickAt"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Send keys",
+          "Id": "SendKeys",
+          "SelectorIds": [
+            "MouseAndKeyboard.SendKeys.FocusAndSendKeysByControl",
+            "MouseAndKeyboard.SendKeys.FocusAndSendKeysByInstanceOrHandle",
+            "MouseAndKeyboard.SendKeys.FocusAndSendKeysByTitleClass",
+            "MouseAndKeyboard.SendKeys.FocusAndSendKeys"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Press/release key",
+          "Id": "PressReleaseKey",
+          "SelectorIds": [
+            "MouseAndKeyboard.PressReleaseKey.PressKey",
+            "MouseAndKeyboard.PressReleaseKey.ReleaseKey"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set key state",
+          "Id": "SetKeyState",
+          "SelectorIds": [
+            "MouseAndKeyboard.SetKeyState"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for mouse",
+          "Id": "WaitForMouse",
+          "SelectorIds": [
+            "MouseAndKeyboard.WaitForMouse.WaitForMouseToBecomeDifferentThan",
+            "MouseAndKeyboard.WaitForMouse.WaitForMouseToBecome"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get keyboard identifier",
+          "Id": "GetKeyboardLayout",
+          "SelectorIds": [
+            "MouseAndKeyboard.GetKeyboardLayout"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for shortcut key",
+          "Id": "WaitForShortcutKey",
+          "SelectorIds": [
+            "MouseAndKeyboard.WaitForShortcutKey.WaitForShortcutKeyAndProceedOnTimeout",
+            "MouseAndKeyboard.WaitForShortcutKey.WaitForShortcutKey"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Mouse and keyboard",
+      "Id": "MouseAndKeyboard",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "If text on screen (OCR)",
+          "Id": "IfTextOnScreen",
+          "SelectorIds": [
+            "OCR.IfTextOnScreen.TextOnScreenExistsWithTesseract",
+            "OCR.IfTextOnScreen.TextOnScreenExistsWithCustomTesseract",
+            "OCR.IfTextOnScreen.TextOnSubregionOfScreenExistsWithTesseract",
+            "OCR.IfTextOnScreen.TextOnSubregionOfScreenExistsWithCustomTesseract",
+            "OCR.IfTextOnScreen.TextOnSubregionRelativeToImageOnScreenExistsWithTesseract",
+            "OCR.IfTextOnScreen.TextOnSubregionRelativeToImageOnScreenExistsWithCustomTesseract",
+            "OCR.IfTextOnScreen.TextOnScreenDoesNotExistWithTesseract",
+            "OCR.IfTextOnScreen.TextOnScreenDoesNotExistWithCustomTesseract",
+            "OCR.IfTextOnScreen.TextOnSubregionOfScreenDoesNotExistWithTesseract",
+            "OCR.IfTextOnScreen.TextOnSubregionOfScreenDoesNotExistWithCustomTesseract",
+            "OCR.IfTextOnScreen.TextOnSubregionRelativeToImageOnScreenDoesNotExistWithTesseract",
+            "OCR.IfTextOnScreen.TextOnSubregionRelativeToImageOnScreenDoesNotExistWithCustomTesseract",
+            "OCR.IfTextOnScreen.TextOnScreenExists",
+            "OCR.IfTextOnScreen.TextOnScreenExistsWithWindowsOcr",
+            "OCR.IfTextOnScreen.TextOnSubregionOfScreenExists",
+            "OCR.IfTextOnScreen.TextOnSubregionOfScreenExistsWithWindowsOcr",
+            "OCR.IfTextOnScreen.TextOnSubregionRelativeToImageOnScreenExists",
+            "OCR.IfTextOnScreen.TextOnSubregionRelativeToImageOnScreenExistsWithWindowsOcr",
+            "OCR.IfTextOnScreen.TextOnScreenDoesNotExist",
+            "OCR.IfTextOnScreen.TextOnScreenDoesNotExistWithWindowsOcr",
+            "OCR.IfTextOnScreen.TextOnSubregionOfScreenDoesNotExist",
+            "OCR.IfTextOnScreen.TextOnSubregionOfScreenDoesNotExistWithWindowsOcr",
+            "OCR.IfTextOnScreen.TextOnSubregionRelativeToImageOnScreenDoesNotExist",
+            "OCR.IfTextOnScreen.TextOnSubregionRelativeToImageOnScreenDoesNotExistWithWindowsOcr"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for text on screen (OCR)",
+          "Id": "WaitForTextOnScreen",
+          "SelectorIds": [
+            "OCR.WaitForTextOnScreen.TextOnScreenToAppearWithTesseract",
+            "OCR.WaitForTextOnScreen.TextOnScreenToAppearWithCustomTesseract",
+            "OCR.WaitForTextOnScreen.TextOnSubregionOfScreenToAppearWithTesseract",
+            "OCR.WaitForTextOnScreen.TextOnSubregionOfScreenToAppearWithCustomTesseract",
+            "OCR.WaitForTextOnScreen.TextOnSubregionRelativeToImageOnScreenToAppearWithTesseract",
+            "OCR.WaitForTextOnScreen.TextOnSubregionRelativeToImageOnScreenToAppearWithCustomTesseract",
+            "OCR.WaitForTextOnScreen.TextOnScreenToDisappearWithTesseract",
+            "OCR.WaitForTextOnScreen.TextOnScreenToDisappearWithCustomTesseract",
+            "OCR.WaitForTextOnScreen.TextOnSubregionOfScreenToDisappearWithTesseract",
+            "OCR.WaitForTextOnScreen.TextOnSubregionOfScreenToDisappearWithCustomTesseract",
+            "OCR.WaitForTextOnScreen.TextOnSubregionRelativeToImageOnScreenToDisappearWithTesseract",
+            "OCR.WaitForTextOnScreen.TextOnSubregionRelativeToImageOnScreenToDisappearWithCustomTesseract",
+            "OCR.WaitForTextOnScreen.TextOnScreenToAppear",
+            "OCR.WaitForTextOnScreen.TextOnScreenToAppearWithWindowsOcr",
+            "OCR.WaitForTextOnScreen.TextOnSubregionOfScreenToAppear",
+            "OCR.WaitForTextOnScreen.TextOnSubregionOfScreenToAppearWithWindowsOcr",
+            "OCR.WaitForTextOnScreen.TextOnSubregionRelativeToImageOnScreenToAppear",
+            "OCR.WaitForTextOnScreen.TextOnSubregionRelativeToImageOnScreenToAppearWithWindowsOcr",
+            "OCR.WaitForTextOnScreen.TextOnScreenToDisappear",
+            "OCR.WaitForTextOnScreen.TextOnScreenToDisappearWithWindowsOcr",
+            "OCR.WaitForTextOnScreen.TextOnSubregionOfScreenToDisappear",
+            "OCR.WaitForTextOnScreen.TextOnSubregionOfScreenToDisappearWithWindowsOcr",
+            "OCR.WaitForTextOnScreen.TextOnSubregionRelativeToImageOnScreenToDisappear",
+            "OCR.WaitForTextOnScreen.TextOnSubregionRelativeToImageOnScreenToDisappearWithWindowsOcr"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create Tesseract OCR engine",
+          "Id": "CreateTesseractEngine",
+          "SelectorIds": [
+            "OCR.CreateTesseractEngine.CreateTesseractEngine",
+            "OCR.CreateTesseractEngine.CreateCustomTesseractEngine"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create MODI OCR engine",
+          "Id": "CreateMODIEngine",
+          "SelectorIds": [
+            "OCR.CreateMODIEngine"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Extract text with OCR",
+          "Id": "ExtractTextWithOCR",
+          "SelectorIds": [
+            "OCR.ExtractTextWithOCR.WaitAndExtractTextFromScreenRelativeToImageWithTesseract",
+            "OCR.ExtractTextWithOCR.WaitAndExtractTextFromScreenRelativeToImageWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromScreenRelativeToImageWithTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromScreenRelativeToImageWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.WaitAndExtractTextFromForegroundWindowRelativeToImageWithTesseract",
+            "OCR.ExtractTextWithOCR.WaitAndExtractTextFromForegroundWindowRelativeToImageWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromForegroundWindowRelativeToImageWithTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromForegroundWindowRelativeToImageWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromScreenWithTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromScreenWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfScreenWithTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfScreenWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.WaitAndExtractTextFromScreenRelativeToImage",
+            "OCR.ExtractTextWithOCR.WaitAndExtractTextFromScreenRelativeToImageWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromScreenRelativeToImage",
+            "OCR.ExtractTextWithOCR.ExtractTextFromScreenRelativeToImageWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromForegroundWindowWithTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromForegroundWindowWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.WaitAndExtractTextFromForegroundWindowRelativeToImage",
+            "OCR.ExtractTextWithOCR.WaitAndExtractTextFromForegroundWindowRelativeToImageWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromForegroundWindowRelativeToImage",
+            "OCR.ExtractTextWithOCR.ExtractTextFromForegroundWindowRelativeToImageWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfForegroundWindowWithTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfForegroundWindowWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromFileWithTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromFileWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromFileRelativeToImageWithTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromFileRelativeToImageWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfFileWithTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfFileWithCustomTesseract",
+            "OCR.ExtractTextWithOCR.ExtractTextFromScreen",
+            "OCR.ExtractTextWithOCR.ExtractTextFromScreenWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfScreen",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfScreenWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromForegroundWindow",
+            "OCR.ExtractTextWithOCR.ExtractTextFromForegroundWindowWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfForegroundWindow",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfForegroundWindowWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromFile",
+            "OCR.ExtractTextWithOCR.ExtractTextFromFileWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromFileRelativeToImage",
+            "OCR.ExtractTextWithOCR.ExtractTextFromFileRelativeToImageWithWindowsOcr",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfFile",
+            "OCR.ExtractTextWithOCR.ExtractTextFromRegionOfFileWithWindowsOcr"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "OCR",
+      "Id": "OCR",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Launch Outlook",
+          "Id": "Launch",
+          "SelectorIds": [
+            "Outlook.Launch"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Retrieve email messages from Outlook",
+          "Id": "RetrieveEmailMessages",
+          "SelectorIds": [
+            "Outlook.RetrieveEmailMessages.RetrieveEmails",
+            "Outlook.RetrieveEmailMessages.RetrieveEmailsAndSaveAttachments"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Send email message through Outlook",
+          "Id": "SendEmailThroughOutlook",
+          "SelectorIds": [
+            "Outlook.SendEmailThroughOutlook.SendEmail",
+            "Outlook.SendEmailThroughOutlook.SendEmailFromMailbox"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Process email messages in Outlook",
+          "Id": "ProcessEmailMessages",
+          "SelectorIds": [
+            "Outlook.ProcessEmailMessages.DeleteEmails",
+            "Outlook.ProcessEmailMessages.MarkEmailsAsUnread",
+            "Outlook.ProcessEmailMessages.MoveEmails"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Save Outlook email messages",
+          "Id": "SaveOutlookEmailMessages",
+          "SelectorIds": [
+            "Outlook.SaveOutlookEmailMessages.SaveEmails",
+            "Outlook.SaveOutlookEmailMessages.SaveEmailsAs"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Respond to Outlook message",
+          "Id": "RespondToMailMessage",
+          "SelectorIds": [
+            "Outlook.RespondToMailMessage.ReplyToEmail",
+            "Outlook.RespondToMailMessage.ReplyAllToEmail",
+            "Outlook.RespondToMailMessage.ForwardEmail"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Close Outlook",
+          "Id": "Close",
+          "SelectorIds": [
+            "Outlook.Close"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Outlook",
+      "Id": "Outlook",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Extract text from PDF",
+          "Id": "ExtractTextFromPDF",
+          "SelectorIds": [
+            "Pdf.ExtractTextFromPDF.ExtractText",
+            "Pdf.ExtractTextFromPDF.ExtractTextFromPage",
+            "Pdf.ExtractTextFromPDF.ExtractTextFromPageRange"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Extract tables from PDF",
+          "Id": "ExtractTablesFromPDF",
+          "SelectorIds": [
+            "Pdf.ExtractTablesFromPDF.ExtractTables",
+            "Pdf.ExtractTablesFromPDF.ExtractTablesFromPage",
+            "Pdf.ExtractTablesFromPDF.ExtractTablesFromPageRange"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Extract images from PDF",
+          "Id": "ExtractImagesFromPDF",
+          "SelectorIds": [
+            "Pdf.ExtractImagesFromPDF.ExtractImages",
+            "Pdf.ExtractImagesFromPDF.ExtractImagesFromPage",
+            "Pdf.ExtractImagesFromPDF.ExtractImagesFromPageRange"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Extract PDF file pages to new PDF file",
+          "Id": "ExtractPages",
+          "SelectorIds": [
+            "Pdf.ExtractPages"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Merge PDF files",
+          "Id": "MergeFiles",
+          "SelectorIds": [
+            "Pdf.MergeFiles"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "PDF",
+      "Id": "Pdf",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "If service",
+          "Id": "IfService",
+          "SelectorIds": [
+            "Services.IfService.IsInstalled",
+            "Services.IfService.IsNotInstalled",
+            "Services.IfService.IsStopped",
+            "Services.IfService.IsRunning",
+            "Services.IfService.IsPaused"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for service",
+          "Id": "WaitForService",
+          "SelectorIds": [
+            "Services.WaitForService.Stopped",
+            "Services.WaitForService.Started",
+            "Services.WaitForService.Paused"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Start service",
+          "Id": "Start",
+          "SelectorIds": [
+            "Services.Start"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Stop service",
+          "Id": "Stop",
+          "SelectorIds": [
+            "Services.Stop"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Pause service",
+          "Id": "Pause",
+          "SelectorIds": [
+            "Services.Pause"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Resume service",
+          "Id": "Resume",
+          "SelectorIds": [
+            "Services.Resume"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Windows services",
+      "Id": "Services",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "If process",
+          "Id": "IfProcess",
+          "SelectorIds": [
+            "System.IfProcess.ProcessIsRunning",
+            "System.IfProcess.ProcessIsNotRunning"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for process",
+          "Id": "WaitForProcess",
+          "SelectorIds": [
+            "System.WaitForProcess.ProcessToStart",
+            "System.WaitForProcess.ProcessToStop"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Run application",
+          "Id": "RunApplication",
+          "SelectorIds": [
+            "System.RunApplication.RunApplication",
+            "System.RunApplication.RunApplicationAndWaitToLoad",
+            "System.RunApplication.RunApplicationAndWaitToComplete"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Terminate process",
+          "Id": "TerminateProcess",
+          "SelectorIds": [
+            "System.TerminateProcess.TerminateProcessByName",
+            "System.TerminateProcess.TerminateProcessById"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Ping",
+          "Id": "Ping",
+          "SelectorIds": [
+            "System.Ping"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set Windows environment variable",
+          "Id": "SetEnvironmentVariable",
+          "SelectorIds": [
+            "System.SetEnvironmentVariable"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get Windows environment variable",
+          "Id": "GetEnvironmentVariable",
+          "SelectorIds": [
+            "System.GetEnvironmentVariable.GetEnvironmentVariable",
+            "System.GetEnvironmentVariable.GetEnvironmentVariableFromScope"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Delete Windows environment variable",
+          "Id": "DeleteEnvironmentVariable",
+          "SelectorIds": [
+            "System.DeleteEnvironmentVariable"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "System",
+      "Id": "System",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Run DOS command",
+          "Id": "RunDOSCommand",
+          "SelectorIds": [
+            "Scripting.RunDOSCommand.RunDOSCommandWithCodePage",
+            "Scripting.RunDOSCommand.RunDOSCommand"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Run VBScript",
+          "Id": "RunVBScript",
+          "SelectorIds": [
+            "Scripting.RunVBScript"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Run JavaScript",
+          "Id": "RunJavascript",
+          "SelectorIds": [
+            "Scripting.RunJavascript"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Run PowerShell script",
+          "Id": "RunPowershellScript",
+          "SelectorIds": [
+            "Scripting.RunPowershellScript"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Run Python script",
+          "Id": "RunPythonScript",
+          "SelectorIds": [
+            "Scripting.RunPythonScript"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Scripting",
+      "Id": "Scripting",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Print document",
+          "Id": "PrintDocument",
+          "SelectorIds": [
+            "Workstation.PrintDocument"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get default printer",
+          "Id": "GetDefaultPrinter",
+          "SelectorIds": [
+            "Workstation.GetDefaultPrinter"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set default printer",
+          "Id": "SetDefaultPrinter",
+          "SelectorIds": [
+            "Workstation.SetDefaultPrinter"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Show desktop",
+          "Id": "ShowDesktop",
+          "SelectorIds": [
+            "Workstation.ShowDesktop"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Lock workstation",
+          "Id": "LockWorkstation",
+          "SelectorIds": [
+            "Workstation.LockWorkstation"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Play sound",
+          "Id": "PlaySound",
+          "SelectorIds": [
+            "Workstation.PlaySound.PlaySound",
+            "Workstation.PlaySound.PlaySystemSound"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Empty recycle bin",
+          "Id": "EmptyRecycleBin",
+          "SelectorIds": [
+            "Workstation.EmptyRecycleBin"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Take screenshot",
+          "Id": "TakeScreenshot",
+          "SelectorIds": [
+            "Workstation.TakeScreenshot.TakeScreenshot",
+            "Workstation.TakeScreenshot.TakeScreenshotAndSaveToFile",
+            "Workstation.TakeScreenshot.TakeScreenshotOfPrimaryScreen",
+            "Workstation.TakeScreenshot.TakeScreenshotOfPrimaryScreenAndSaveToFile",
+            "Workstation.TakeScreenshot.TakeScreenshotOfScreen",
+            "Workstation.TakeScreenshot.TakeScreenshotOfScreenAndSaveToFile",
+            "Workstation.TakeScreenshot.TakeScreenshotOfForegroundWindow",
+            "Workstation.TakeScreenshot.TakeScreenshotOfForegroundWindowAndSaveToFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Control screen saver",
+          "Id": "ControlScreenSaver",
+          "SelectorIds": [
+            "Workstation.ControlScreenSaver"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get screen resolution",
+          "Id": "GetScreenResolution",
+          "SelectorIds": [
+            "Workstation.GetScreenResolution"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set screen resolution",
+          "Id": "SetScreenResolution",
+          "SelectorIds": [
+            "Workstation.SetScreenResolution"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Shutdown computer",
+          "Id": "ShutdownComputer",
+          "SelectorIds": [
+            "External.ShutdownComputer.Shutdown",
+            "External.ShutdownComputer.Restart",
+            "External.ShutdownComputer.Sleep",
+            "External.ShutdownComputer.Hibernate"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Log off user",
+          "Id": "LogOffUser",
+          "SelectorIds": [
+            "External.LogOffUser"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Workstation",
+      "Id": "Workstation",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Open terminal session",
+          "Id": "OpenTerminalSession",
+          "SelectorIds": [
+            "TerminalEmulation.OpenTerminalSession.OpenSessionUsingReflectionProfile",
+            "TerminalEmulation.OpenTerminalSession.OpenSessionUsingReflection",
+            "TerminalEmulation.OpenTerminalSession.OpenSession"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Close terminal session",
+          "Id": "CloseSession",
+          "SelectorIds": [
+            "TerminalEmulation.CloseSession"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Move cursor on terminal session",
+          "Id": "MoveCursor",
+          "SelectorIds": [
+            "TerminalEmulation.MoveCursor"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get text from terminal session",
+          "Id": "GetTextFromTerminalSession",
+          "SelectorIds": [
+            "TerminalEmulation.GetTextFromTerminalSession.GetTextFromFieldWithLabel",
+            "TerminalEmulation.GetTextFromTerminalSession.GetTextFromFieldWithIndex",
+            "TerminalEmulation.GetTextFromTerminalSession.GetTextFromFieldAtPosition",
+            "TerminalEmulation.GetTextFromTerminalSession.GetTextFromPosition",
+            "TerminalEmulation.GetTextFromTerminalSession.GetTextFromScreen",
+            "TerminalEmulation.GetTextFromTerminalSession.GetTextFromCursorPosition"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set text on terminal session",
+          "Id": "SetTextOnTerminalSession",
+          "SelectorIds": [
+            "TerminalEmulation.SetTextOnTerminalSession.SetTextOnFieldWithLabel",
+            "TerminalEmulation.SetTextOnTerminalSession.SetTextOnFieldWithIndex",
+            "TerminalEmulation.SetTextOnTerminalSession.SetTextOnFieldAtPosition",
+            "TerminalEmulation.SetTextOnTerminalSession.SetTextOnCursorPosition"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Send key to terminal session",
+          "Id": "SendKey",
+          "SelectorIds": [
+            "TerminalEmulation.SendKey"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for text on terminal session",
+          "Id": "WaitForTextOnTerminalSession",
+          "SelectorIds": [
+            "TerminalEmulation.WaitForTextOnTerminalSession.WaitForTextOnFieldWithLabel",
+            "TerminalEmulation.WaitForTextOnTerminalSession.WaitForTextOnFieldWithIndex",
+            "TerminalEmulation.WaitForTextOnTerminalSession.WaitForTextOnFieldAtPosition",
+            "TerminalEmulation.WaitForTextOnTerminalSession.WaitForTextOnScreen"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Terminal emulation",
+      "Id": "TerminalEmulation",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Append line to text",
+          "Id": "AppendLine",
+          "SelectorIds": [
+            "Text.AppendLine"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Get subtext",
+          "Id": "GetSubtext",
+          "SelectorIds": [
+            "Text.GetSubtext.GetText",
+            "Text.GetSubtext.GetSubtextFrom",
+            "Text.GetSubtext.GetSubtextFromStartTo",
+            "Text.GetSubtext.GetSubtext"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Pad text",
+          "Id": "Pad",
+          "SelectorIds": [
+            "Text.Pad"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Trim text",
+          "Id": "Trim",
+          "SelectorIds": [
+            "Text.Trim"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Reverse text",
+          "Id": "Reverse",
+          "SelectorIds": [
+            "Text.Reverse"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Change text case",
+          "Id": "ChangeCase",
+          "SelectorIds": [
+            "Text.ChangeCase"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Convert text to number",
+          "Id": "ToNumber",
+          "SelectorIds": [
+            "Text.ToNumber"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Convert number to text",
+          "Id": "FromNumber",
+          "SelectorIds": [
+            "Text.FromNumber"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Convert text to datetime",
+          "Id": "ConvertTextToDateTime",
+          "SelectorIds": [
+            "Text.ConvertTextToDateTime.ToDateTime",
+            "Text.ConvertTextToDateTime.ToDateTimeCustomFormat"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Convert datetime to text",
+          "Id": "ConvertDateTimeToText",
+          "SelectorIds": [
+            "Text.ConvertDateTimeToText.FromDateTime",
+            "Text.ConvertDateTimeToText.FromCustomDateTime"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Create random text",
+          "Id": "Random",
+          "SelectorIds": [
+            "Text.Random"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Join text",
+          "Id": "JoinText",
+          "SelectorIds": [
+            "Text.JoinText.Join",
+            "Text.JoinText.JoinWithDelimiter",
+            "Text.JoinText.JoinWithCustomDelimiter"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Split text",
+          "Id": "SplitText",
+          "SelectorIds": [
+            "Text.SplitText.Split",
+            "Text.SplitText.SplitWithDelimiter",
+            "Text.SplitText.SplitAtNumberOfCharacters"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Parse text",
+          "Id": "ParseText",
+          "SelectorIds": [
+            "Text.ParseText.Parse",
+            "Text.ParseText.ParseForFirstOccurrence",
+            "Text.ParseText.RegexParse",
+            "Text.ParseText.RegexParseForFirstOccurrence"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Replace text",
+          "Id": "Replace",
+          "SelectorIds": [
+            "Text.Replace"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Escape text for regular expression",
+          "Id": "EscapeForRegularExpression",
+          "SelectorIds": [
+            "Text.EscapeForRegularExpression"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Recognize entities in text",
+          "Id": "RecognizeEntitiesInText",
+          "SelectorIds": [
+            "Text.RecognizeEntitiesInText"
+          ],
+          "DLPSupport": false
+        }
+      ],
+      "FriendlyName": "Text",
+      "Id": "Text",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "If window contains",
+          "Id": "IfWindowContains",
+          "SelectorIds": [
+            "UIAutomation.IfWindowContains.WindowContainsElement",
+            "UIAutomation.IfWindowContains.WindowContainsElementInState",
+            "UIAutomation.IfWindowContains.WindowDoesNotContainElement",
+            "UIAutomation.IfWindowContains.WindowContainsText",
+            "UIAutomation.IfWindowContains.WindowDoesNotContainText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for window content",
+          "Id": "WaitForWindowContent",
+          "SelectorIds": [
+            "UIAutomation.WaitForWindowContent.WindowToContainElement",
+            "UIAutomation.WaitForWindowContent.WindowToContainElementInState",
+            "UIAutomation.WaitForWindowContent.WindowToNotContainElement",
+            "UIAutomation.WaitForWindowContent.WindowToContainText",
+            "UIAutomation.WaitForWindowContent.WindowToNotContainText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "If image",
+          "Id": "IfImage",
+          "SelectorIds": [
+            "UIAutomation.IfImage.ExistsOnScreen",
+            "UIAutomation.IfImage.ExistsOnSubregionOfScreen",
+            "UIAutomation.IfImage.ExistsOnForeground",
+            "UIAutomation.IfImage.ExistsOnSubregionOfForeground",
+            "UIAutomation.IfImage.DoesNotExistOnScreen",
+            "UIAutomation.IfImage.DoesNotExistOnSubregionOfScreen",
+            "UIAutomation.IfImage.DoesNotExistOnForeground",
+            "UIAutomation.IfImage.DoesNotExistOnSubregionOfForeground"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Use desktop",
+          "Id": "UseDesktop",
+          "SelectorIds": [
+            "UIAutomation.UseDesktop"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Select tab in window",
+          "Id": "SelectTab",
+          "SelectorIds": [
+            "UIAutomation.SelectTab"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for image",
+          "Id": "WaitForImage",
+          "SelectorIds": [
+            "UIAutomation.WaitForImage.ToAppearOnScreen",
+            "UIAutomation.WaitForImage.ToAppearOnSubregionOfScreen",
+            "UIAutomation.WaitForImage.ToAppearOnForegroundWindow",
+            "UIAutomation.WaitForImage.ToAppearOnSubregionOfForegroundWindow",
+            "UIAutomation.WaitForImage.ToDisappearFromScreen",
+            "UIAutomation.WaitForImage.ToDisappearFromSubregionOfScreen",
+            "UIAutomation.WaitForImage.ToDisappearFromForegroundWindow",
+            "UIAutomation.WaitForImage.ToDisappearFromSubregionOfForegroundWindow"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Hover mouse over UI element in window",
+          "Id": "HoverOnElement",
+          "SelectorIds": [
+            "UIAutomation.HoverOnElement"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Click UI element in window",
+          "Id": "Click",
+          "SelectorIds": [
+            "UIAutomation.Click"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Select menu option in window",
+          "Id": "SelectMenuOption",
+          "SelectorIds": [
+            "UIAutomation.SelectMenuOption"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Drag and drop UI element in window",
+          "Id": "DragAndDropElement",
+          "SelectorIds": [
+            "UIAutomation.DragAndDropElement"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Expand/collapse tree node in window",
+          "Id": "ExpandCollapseTreeNode",
+          "SelectorIds": [
+            "UIAutomation.ExpandCollapseTreeNode"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get window",
+          "Id": "GetWindow",
+          "SelectorIds": [
+            "UIAutomation.GetWindow.Get",
+            "UIAutomation.GetWindow.GetUseTimeout",
+            "UIAutomation.GetWindow.GetForegroundWindow"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Focus window",
+          "Id": "FocusWindow",
+          "SelectorIds": [
+            "UIAutomation.FocusWindow.Focus",
+            "UIAutomation.FocusWindow.FocusByInstanceOrHandle",
+            "UIAutomation.FocusWindow.FocusByTitleClass"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "If window",
+          "Id": "IfWindow",
+          "SelectorIds": [
+            "UIAutomation.IfWindow.IsOpen",
+            "UIAutomation.IfWindow.IsOpenByInstanceOrHandle",
+            "UIAutomation.IfWindow.IsOpenByTitleClass",
+            "UIAutomation.IfWindow.IsNotOpen",
+            "UIAutomation.IfWindow.IsNotOpenByInstanceOrHandle",
+            "UIAutomation.IfWindow.IsNotOpenByTitleClass",
+            "UIAutomation.IfWindow.IsFocused",
+            "UIAutomation.IfWindow.IsFocusedByInstanceOrHandle",
+            "UIAutomation.IfWindow.IsFocusedByTitleClass",
+            "UIAutomation.IfWindow.IsNotFocused",
+            "UIAutomation.IfWindow.IsNotFocusedByInstanceOrHandle",
+            "UIAutomation.IfWindow.IsNotFocusedByTitleClass"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set window state",
+          "Id": "SetWindowState",
+          "SelectorIds": [
+            "UIAutomation.SetWindowState.SetState",
+            "UIAutomation.SetWindowState.SetStateByInstanceOrHandle",
+            "UIAutomation.SetWindowState.SetStateByTitleClass"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for window",
+          "Id": "WaitForWindow",
+          "SelectorIds": [
+            "UIAutomation.WaitForWindow.ToOpen",
+            "UIAutomation.WaitForWindow.ToOpenByInstanceOrHandle",
+            "UIAutomation.WaitForWindow.ToOpenByTitleClass",
+            "UIAutomation.WaitForWindow.ToClose",
+            "UIAutomation.WaitForWindow.ToCloseByInstanceOrHandle",
+            "UIAutomation.WaitForWindow.ToCloseByTitleClass",
+            "UIAutomation.WaitForWindow.ToBecomeFocused",
+            "UIAutomation.WaitForWindow.ToBecomeFocusedByInstanceOrHandle",
+            "UIAutomation.WaitForWindow.ToBecomeFocusedByTitleClass",
+            "UIAutomation.WaitForWindow.ToLoseFocus",
+            "UIAutomation.WaitForWindow.ToLoseFocusByInstanceOrHandle",
+            "UIAutomation.WaitForWindow.ToLoseFocusByTitleClass"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set window visibility",
+          "Id": "SetWindowVisibility",
+          "SelectorIds": [
+            "UIAutomation.SetWindowVisibility.SetVisibility",
+            "UIAutomation.SetWindowVisibility.SetVisibilityByInstanceOrHandle",
+            "UIAutomation.SetWindowVisibility.SetVisibilityByTitleClass"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Move window",
+          "Id": "MoveWindow",
+          "SelectorIds": [
+            "UIAutomation.MoveWindow.Move",
+            "UIAutomation.MoveWindow.MoveByInstanceOrHandle",
+            "UIAutomation.MoveWindow.MoveByTitleClass"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Resize window",
+          "Id": "ResizeWindow",
+          "SelectorIds": [
+            "UIAutomation.ResizeWindow.Resize",
+            "UIAutomation.ResizeWindow.ResizeByInstanceOrHandle",
+            "UIAutomation.ResizeWindow.ResizeByTitleClass"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Close window",
+          "Id": "CloseWindow",
+          "SelectorIds": [
+            "UIAutomation.CloseWindow.Close",
+            "UIAutomation.CloseWindow.CloseByTitleClass",
+            "UIAutomation.CloseWindow.CloseByInstanceOrHandle"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Focus text field in window",
+          "Id": "FocusTextField",
+          "SelectorIds": [
+            "UIAutomation.FocusTextField"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Populate text field in window",
+          "Id": "PopulateTextField",
+          "SelectorIds": [
+            "UIAutomation.PopulateTextField"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Press button in window",
+          "Id": "PressButton",
+          "SelectorIds": [
+            "UIAutomation.PressButton"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Select radio button in window",
+          "Id": "SelectRadioButton",
+          "SelectorIds": [
+            "UIAutomation.SelectRadioButton"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set checkbox state in window",
+          "Id": "SetCheckboxState",
+          "SelectorIds": [
+            "UIAutomation.SetCheckboxState"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set drop-down list value in window",
+          "Id": "SetDropDownListValueInWindow",
+          "SelectorIds": [
+            "UIAutomation.SetDropDownListValueInWindow.ClearDropDownListValue",
+            "UIAutomation.SetDropDownListValueInWindow.SetDropDownListValueByName",
+            "UIAutomation.SetDropDownListValueInWindow.SetDropDownListValueByIndex"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get details of window",
+          "Id": "GetWindowDetails",
+          "SelectorIds": [
+            "UIAutomation.GetWindowDetails"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get details of the UI element in window",
+          "Id": "GetElementDetails",
+          "SelectorIds": [
+            "UIAutomation.GetElementDetails"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get selected checkboxes in window",
+          "Id": "GetSelectedCheckboxesInWindow",
+          "SelectorIds": [
+            "UIAutomation.GetSelectedCheckboxesInWindow.GetSelectedCheckboxes",
+            "UIAutomation.GetSelectedCheckboxesInWindow.GetCheckboxState"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get selected radio button in window",
+          "Id": "GetSelectedRadiobuttonInWindow",
+          "SelectorIds": [
+            "UIAutomation.GetSelectedRadiobuttonInWindow.GetSelectedRadiobutton",
+            "UIAutomation.GetSelectedRadiobuttonInWindow.GetRadioButtonState"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Extract data from window",
+          "Id": "ExtractDataFromWindow",
+          "SelectorIds": [
+            "UIAutomation.ExtractDataFromWindow.ExtractData",
+            "UIAutomation.ExtractDataFromWindow.ExtractDataInExcelSpreadsheet"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Take screenshot of UI element",
+          "Id": "TakeScreenshotOfUIElement",
+          "SelectorIds": [
+            "UIAutomation.TakeScreenshotOfUIElement.TakeScreenshotOfUIElement",
+            "UIAutomation.TakeScreenshotOfUIElement.TakeScreenshotOfUIElementAndSaveToFile"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "UI automation",
+      "Id": "UIAutomation",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Truncate number",
+          "Id": "TruncateNumber",
+          "SelectorIds": [
+            "Variables.TruncateNumber.GetIntegerPart",
+            "Variables.TruncateNumber.GetDecimalPart",
+            "Variables.TruncateNumber.RoundNumber"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Generate random number",
+          "Id": "GenerateRandomNumber",
+          "SelectorIds": [
+            "Variables.GenerateRandomNumber.RandomNumber",
+            "Variables.GenerateRandomNumber.ListOfRandomNumbers"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Clear list",
+          "Id": "ClearList",
+          "SelectorIds": [
+            "Variables.ClearList"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Remove item from list",
+          "Id": "RemoveItemFromList",
+          "SelectorIds": [
+            "Variables.RemoveItemFromList.RemoveItemFromListByIndex",
+            "Variables.RemoveItemFromList.RemoveItemFromListByValue"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Sort list",
+          "Id": "SortList",
+          "SelectorIds": [
+            "Variables.SortList.SortList",
+            "Variables.SortList.SortListByProperty"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Shuffle list",
+          "Id": "ShuffleList",
+          "SelectorIds": [
+            "Variables.ShuffleList"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Merge lists",
+          "Id": "MergeLists",
+          "SelectorIds": [
+            "Variables.MergeLists"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Reverse list",
+          "Id": "ReverseList",
+          "SelectorIds": [
+            "Variables.ReverseList"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Remove duplicate items from list",
+          "Id": "RemoveDuplicateItemsFromList",
+          "SelectorIds": [
+            "Variables.RemoveDuplicateItemsFromList"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Find common list items",
+          "Id": "FindCommonListItems",
+          "SelectorIds": [
+            "Variables.FindCommonListItems"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Subtract lists",
+          "Id": "SubtractLists",
+          "SelectorIds": [
+            "Variables.SubtractLists"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Retrieve data table column into list",
+          "Id": "RetrieveDataTableColumnIntoList",
+          "SelectorIds": [
+            "Variables.RetrieveDataTableColumnIntoList"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Convert JSON to custom object",
+          "Id": "ConvertJsonToCustomObject",
+          "SelectorIds": [
+            "Variables.ConvertJsonToCustomObject"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Convert custom object to JSON",
+          "Id": "ConvertCustomObjectToJson",
+          "SelectorIds": [
+            "Variables.ConvertCustomObjectToJson"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Add item to list",
+          "Id": "AddItemToList",
+          "SelectorIds": [
+            "Variables.AddItemToList"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Create new list",
+          "Id": "CreateNewList",
+          "SelectorIds": [
+            "Variables.CreateNewList"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Increase variable",
+          "Id": "IncreaseVariable",
+          "SelectorIds": [
+            "Variables.IncreaseVariable"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Decrease variable",
+          "Id": "DecreaseVariable",
+          "SelectorIds": [
+            "Variables.DecreaseVariable"
+          ],
+          "DLPSupport": false
+        },
+        {
+          "FriendlyName": "Set variable",
+          "Id": "Assign",
+          "SelectorIds": [
+            "Variables.Assign"
+          ],
+          "DLPSupport": false
+        }
+      ],
+      "FriendlyName": "Variables",
+      "Id": "Variables",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Download from web",
+          "Id": "DownloadFromWeb",
+          "SelectorIds": [
+            "Web.DownloadFromWeb.DownloadToFile",
+            "Web.DownloadFromWeb.DownloadToFolder",
+            "Web.DownloadFromWeb.DownloadToFileUseAuth",
+            "Web.DownloadFromWeb.DownloadToFolderUseAuth",
+            "Web.DownloadFromWeb.DownloadToFileUsePost",
+            "Web.DownloadFromWeb.DownloadToFolderUsePost",
+            "Web.DownloadFromWeb.DownloadToFileUsePostAndAuth",
+            "Web.DownloadFromWeb.DownloadToFolderUsePostAndAuth",
+            "Web.DownloadFromWeb.Download",
+            "Web.DownloadFromWeb.DownloadUseAuth",
+            "Web.DownloadFromWeb.DownloadUsePost",
+            "Web.DownloadFromWeb.DownloadUsePostAndAuth"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Invoke SOAP web service",
+          "Id": "InvokeSoapService",
+          "SelectorIds": [
+            "Web.InvokeSoapService.InvokeSoapService",
+            "Web.InvokeSoapService.InvokeSoapServiceUseAuth"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Invoke web service",
+          "Id": "InvokeWebService",
+          "SelectorIds": [
+            "Web.InvokeWebService.InvokeWebServiceSaveToFile",
+            "Web.InvokeWebService.InvokeWebServiceSaveToFolder",
+            "Web.InvokeWebService.InvokeWebServiceUseAuthSaveToFile",
+            "Web.InvokeWebService.InvokeWebServiceUseAuthSaveToFolder",
+            "Web.InvokeWebService.InvokeWebService",
+            "Web.InvokeWebService.InvokeWebServiceUseAuth"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "HTTP",
+      "Id": "Web",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "If web page contains",
+          "Id": "IfWebPageContains",
+          "SelectorIds": [
+            "WebAutomation.IfWebPageContains.WebPageContainsElement",
+            "WebAutomation.IfWebPageContains.WebPageDoesNotContainElement",
+            "WebAutomation.IfWebPageContains.WebPageContainsText",
+            "WebAutomation.IfWebPageContains.WebPageDoesNotContainText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait for web page content",
+          "Id": "WaitForWebPageContent",
+          "SelectorIds": [
+            "WebAutomation.WaitForWebPageContent.WebPageToContainElement",
+            "WebAutomation.WaitForWebPageContent.WebPageToNotContainElement",
+            "WebAutomation.WaitForWebPageContent.WebPageToContainText",
+            "WebAutomation.WaitForWebPageContent.WebPageToNotContainText"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Launch new Internet Explorer",
+          "Id": "LaunchInternetExplorer",
+          "SelectorIds": [
+            "WebAutomation.LaunchInternetExplorer.LaunchInternetExplorer",
+            "WebAutomation.LaunchInternetExplorer.LaunchInternetExplorerCloseDialog",
+            "WebAutomation.LaunchInternetExplorer.LaunchInternetExplorerPressDialogButton",
+            "WebAutomation.LaunchInternetExplorer.LaunchAutomationBrowser",
+            "WebAutomation.LaunchInternetExplorer.LaunchAutomationBrowserCloseDialog",
+            "WebAutomation.LaunchInternetExplorer.LaunchAutomationBrowserPressDialogButton",
+            "WebAutomation.LaunchInternetExplorer.LaunchInternetExplorerNoWait",
+            "WebAutomation.LaunchInternetExplorer.LaunchAutomationBrowserNoWait",
+            "WebAutomation.LaunchInternetExplorer.AttachToInternetExplorerByTitle",
+            "WebAutomation.LaunchInternetExplorer.AttachToInternetExplorerByUrl",
+            "WebAutomation.LaunchInternetExplorer.AttachToForegroundInternetExplorer"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Launch new Firefox",
+          "Id": "LaunchFirefox",
+          "SelectorIds": [
+            "WebAutomation.LaunchFirefox.LaunchFirefox",
+            "WebAutomation.LaunchFirefox.LaunchFirefoxCloseDialog",
+            "WebAutomation.LaunchFirefox.LaunchFirefoxPressDialogButton",
+            "WebAutomation.LaunchFirefox.LaunchFirefoxNoWait",
+            "WebAutomation.LaunchFirefox.AttachToFirefoxByTitle",
+            "WebAutomation.LaunchFirefox.AttachToFirefoxByUrl",
+            "WebAutomation.LaunchFirefox.AttachToForegroundFirefox"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Launch new Chrome",
+          "Id": "LaunchChrome",
+          "SelectorIds": [
+            "WebAutomation.LaunchChrome.LaunchChrome",
+            "WebAutomation.LaunchChrome.LaunchChromeCloseDialog",
+            "WebAutomation.LaunchChrome.LaunchChromePressDialogButton",
+            "WebAutomation.LaunchChrome.LaunchChromeNoWait",
+            "WebAutomation.LaunchChrome.AttachToChromeByTitle",
+            "WebAutomation.LaunchChrome.AttachToChromeByUrl",
+            "WebAutomation.LaunchChrome.AttachToForegroundChrome"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Launch new Microsoft Edge",
+          "Id": "LaunchEdge",
+          "SelectorIds": [
+            "WebAutomation.LaunchEdge.LaunchEdge",
+            "WebAutomation.LaunchEdge.LaunchEdgeCloseDialog",
+            "WebAutomation.LaunchEdge.LaunchEdgePressDialogButton",
+            "WebAutomation.LaunchEdge.LaunchEdgeNoWait",
+            "WebAutomation.LaunchEdge.AttachToEdgeByTitle",
+            "WebAutomation.LaunchEdge.AttachToEdgeByUrl",
+            "WebAutomation.LaunchEdge.AttachToTheForegroundEdge"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Create new tab",
+          "Id": "CreateNewTab",
+          "SelectorIds": [
+            "WebAutomation.CreateNewTab.CreateNewTab",
+            "WebAutomation.CreateNewTab.CreateNewTabCloseDialog",
+            "WebAutomation.CreateNewTab.CreateNewTabPressDialogButton",
+            "WebAutomation.CreateNewTab.CreateNewTabNoWait"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Go to web page",
+          "Id": "GoToWebPage",
+          "SelectorIds": [
+            "WebAutomation.GoToWebPage.GoToWebPage",
+            "WebAutomation.GoToWebPage.GoToWebPageCloseDialog",
+            "WebAutomation.GoToWebPage.GoToWebPagePressDialogButton",
+            "WebAutomation.GoToWebPage.NavigateBack",
+            "WebAutomation.GoToWebPage.NavigateBackCloseDialog",
+            "WebAutomation.GoToWebPage.NavigateBackPressDialogButton",
+            "WebAutomation.GoToWebPage.NavigateForward",
+            "WebAutomation.GoToWebPage.NavigateForwardCloseDialog",
+            "WebAutomation.GoToWebPage.NavigateForwardPressDialogButton",
+            "WebAutomation.GoToWebPage.ReloadWebPage",
+            "WebAutomation.GoToWebPage.ReloadWebPageCloseDialog",
+            "WebAutomation.GoToWebPage.ReloadWebPagePressDialogButton",
+            "WebAutomation.GoToWebPage.GoToWebPageNoWait",
+            "WebAutomation.GoToWebPage.NavigateBackNoWait",
+            "WebAutomation.GoToWebPage.NavigateForwardNoWait",
+            "WebAutomation.GoToWebPage.ReloadWebPageNoWait"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Click link on web page",
+          "Id": "Click",
+          "SelectorIds": [
+            "WebAutomation.Click.Click",
+            "WebAutomation.Click.ClickCloseDialog",
+            "WebAutomation.Click.ClickPressDialogButton",
+            "WebAutomation.Click.ClickNoWait"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Click download link on web page",
+          "Id": "ClickDownloadLink",
+          "SelectorIds": [
+            "WebAutomation.ClickDownloadLink"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Run JavaScript function on web page",
+          "Id": "ExecuteJavascript",
+          "SelectorIds": [
+            "WebAutomation.ExecuteJavascript"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Hover mouse over element on web page",
+          "Id": "HoverOverElement",
+          "SelectorIds": [
+            "WebAutomation.HoverOverElement"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Close web browser",
+          "Id": "CloseWebBrowser",
+          "SelectorIds": [
+            "WebAutomation.CloseWebBrowser"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Focus text field on web page",
+          "Id": "Focus",
+          "SelectorIds": [
+            "WebAutomation.Focus.Focus",
+            "WebAutomation.Focus.FocusCloseDialog",
+            "WebAutomation.Focus.FocusPressDialogButton",
+            "WebAutomation.Focus.FocusNoWait"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Populate text field on web page",
+          "Id": "PopulateTextField",
+          "SelectorIds": [
+            "WebAutomation.PopulateTextField.PopulateTextField",
+            "WebAutomation.PopulateTextField.PopulateTextFieldCloseDialog",
+            "WebAutomation.PopulateTextField.PopulateTextFieldPressDialogButton",
+            "WebAutomation.PopulateTextField.PopulateTextFieldUsePhysicalKeyboard",
+            "WebAutomation.PopulateTextField.PopulateTextFieldCloseDialogUsePhysicalKeyboard",
+            "WebAutomation.PopulateTextField.PopulateTextFieldPressDialogButtonUsePhysicalKeyboard",
+            "WebAutomation.PopulateTextField.PopulateTextFieldNoWait",
+            "WebAutomation.PopulateTextField.PopulateTextFieldNoWaitUsePhysicalKeyboard"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set check box state on web page",
+          "Id": "SetCheckboxState",
+          "SelectorIds": [
+            "WebAutomation.SetCheckboxState.SetCheckboxState",
+            "WebAutomation.SetCheckboxState.SetCheckboxStateCloseDialog",
+            "WebAutomation.SetCheckboxState.SetCheckboxStatePressDialogButton",
+            "WebAutomation.SetCheckboxState.SetCheckboxStateNoWait"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Select radio button on web page",
+          "Id": "SelectRadioButton",
+          "SelectorIds": [
+            "WebAutomation.SelectRadioButton.SelectRadioButton",
+            "WebAutomation.SelectRadioButton.SelectRadioButtonCloseDialog",
+            "WebAutomation.SelectRadioButton.SelectRadioButtonPressDialogButton",
+            "WebAutomation.SelectRadioButton.SelectRadioButtonNoWait"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set drop-down list value on web page",
+          "Id": "SetDropDownListValue",
+          "SelectorIds": [
+            "WebAutomation.SetDropDownListValue.SetDropDownListValueByName",
+            "WebAutomation.SetDropDownListValue.SetDropDownListValueByIndex",
+            "WebAutomation.SetDropDownListValue.ClearDropDownListValue",
+            "WebAutomation.SetDropDownListValue.SetDropDownListValueByNameCloseDialog",
+            "WebAutomation.SetDropDownListValue.SetDropDownListValueByIndexCloseDialog",
+            "WebAutomation.SetDropDownListValue.ClearDropDownListValueCloseDialog",
+            "WebAutomation.SetDropDownListValue.SetDropDownListValueByNamePressDialogButton",
+            "WebAutomation.SetDropDownListValue.SetDropDownListValueByIndexPressDialogButton",
+            "WebAutomation.SetDropDownListValue.ClearDropDownListValuePressDialogButton",
+            "WebAutomation.SetDropDownListValue.SetDropDownListValueByNameNoWait",
+            "WebAutomation.SetDropDownListValue.SetDropDownListValueByIndexNoWait",
+            "WebAutomation.SetDropDownListValue.ClearDropDownListValueNoWait"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Press button on web page",
+          "Id": "PressButton",
+          "SelectorIds": [
+            "WebAutomation.PressButton.PressButton",
+            "WebAutomation.PressButton.PressButtonCloseDialog",
+            "WebAutomation.PressButton.PressButtonPressDialogButton",
+            "WebAutomation.PressButton.PressButtonNoWait"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Extract data from web page",
+          "Id": "ExtractData",
+          "SelectorIds": [
+            "WebAutomation.ExtractData.ExtractDataUsingPagingFromNumberOfPages",
+            "WebAutomation.ExtractData.ExtractDataUsingPagingFromAllPages",
+            "WebAutomation.ExtractData.ExtractDataUsingPagingFromNumberOfPagesInExcel",
+            "WebAutomation.ExtractData.ExtractDataUsingPagingFromAllPagesInExcel",
+            "WebAutomation.ExtractData.ExtractHandPickedValuesUsingPagingFromNumberOfPages",
+            "WebAutomation.ExtractData.ExtractHandPickedValuesUsingPagingFromAllPages",
+            "WebAutomation.ExtractData.ExtractHandPickedValuesUsingPagingFromNumberOfPagesInExcel",
+            "WebAutomation.ExtractData.ExtractHandPickedValuesUsingPagingFromAllPagesInExcel",
+            "WebAutomation.ExtractData.ExtractSingleValueUsingPagingFromNumberOfPages",
+            "WebAutomation.ExtractData.ExtractSingleValueUsingPagingFromAllPages",
+            "WebAutomation.ExtractData.ExtractSingleValueUsingPagingFromNumberOfPagesInExcel",
+            "WebAutomation.ExtractData.ExtractSingleValueUsingPagingFromAllPagesInExcel",
+            "WebAutomation.ExtractData.ExtractData",
+            "WebAutomation.ExtractData.ExtractHtmlTableUsingPagingFromNumberOfPages",
+            "WebAutomation.ExtractData.ExtractHtmlTableUsingPagingFromAllPages",
+            "WebAutomation.ExtractData.ExtractHtmlTableUsingPagingFromNumberOfPagesInExcel",
+            "WebAutomation.ExtractData.ExtractHtmlTableUsingPagingFromAllPagesInExcel",
+            "WebAutomation.ExtractData.ExtractTableUsingPagingFromNumberOfPages",
+            "WebAutomation.ExtractData.ExtractTableUsingPagingFromAllPages",
+            "WebAutomation.ExtractData.ExtractTableUsingPagingFromNumberOfPagesInExcel",
+            "WebAutomation.ExtractData.ExtractTableUsingPagingFromAllPagesInExcel",
+            "WebAutomation.ExtractData.ExtractHandPickedValues",
+            "WebAutomation.ExtractData.ExtractHandPickedValuesInExcel",
+            "WebAutomation.ExtractData.ExtractListUsingPagingFromNumberOfPages",
+            "WebAutomation.ExtractData.ExtractListUsingPagingFromAllPages",
+            "WebAutomation.ExtractData.ExtractListUsingPagingFromNumberOfPagesInExcel",
+            "WebAutomation.ExtractData.ExtractListUsingPagingFromAllPagesInExcel",
+            "WebAutomation.ExtractData.ExtractSingleValue",
+            "WebAutomation.ExtractData.ExtractSingleValueInExcel",
+            "WebAutomation.ExtractData.ExtractDataInExcel",
+            "WebAutomation.ExtractData.ExtractHtmlTable",
+            "WebAutomation.ExtractData.ExtractHtmlTableInExcel",
+            "WebAutomation.ExtractData.ExtractTable",
+            "WebAutomation.ExtractData.ExtractTableInExcel",
+            "WebAutomation.ExtractData.ExtractList",
+            "WebAutomation.ExtractData.ExtractListInExcel"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get details of web page",
+          "Id": "GetDetailsOfWebPage",
+          "SelectorIds": [
+            "WebAutomation.GetDetailsOfWebPage"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get details of element on web page",
+          "Id": "GetDetailsOfElement",
+          "SelectorIds": [
+            "WebAutomation.GetDetailsOfElement"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Take screenshot of web page",
+          "Id": "TakeScreenshot",
+          "SelectorIds": [
+            "WebAutomation.TakeScreenshot.TakeScreenshot",
+            "WebAutomation.TakeScreenshot.TakeScreenshotOfElement",
+            "WebAutomation.TakeScreenshot.TakeScreenshotSaveToFile",
+            "WebAutomation.TakeScreenshot.TakeScreenshotOfElementSaveToFile"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Browser automation",
+      "Id": "WebAutomation",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Read XML from file",
+          "Id": "ReadFromFile",
+          "SelectorIds": [
+            "XML.ReadFromFile"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Write XML to file",
+          "Id": "WriteXmlToFile",
+          "SelectorIds": [
+            "XML.WriteXmlToFile.WriteToFile",
+            "XML.WriteXmlToFile.WriteToFileFormatted"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Execute XPath expression",
+          "Id": "ExecuteXPathQuery",
+          "SelectorIds": [
+            "XML.ExecuteXPathQuery.ExecuteXPath",
+            "XML.ExecuteXPathQuery.ExecuteXPathAndGetFirstValueOnly"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get XML element attribute",
+          "Id": "GetXmlElementAttribute",
+          "SelectorIds": [
+            "XML.GetXmlElementAttribute.GetElementAttribute",
+            "XML.GetXmlElementAttribute.GetElementAttributeAsNumeric",
+            "XML.GetXmlElementAttribute.GetElementAttributeAsBoolean",
+            "XML.GetXmlElementAttribute.GetElementAttributeAsDateTime"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set XML element attribute",
+          "Id": "SetElementAttribute",
+          "SelectorIds": [
+            "XML.SetElementAttribute"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Remove XML element attribute",
+          "Id": "RemoveElementAttribute",
+          "SelectorIds": [
+            "XML.RemoveElementAttribute"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get XML element value",
+          "Id": "GetXmlElementValue",
+          "SelectorIds": [
+            "XML.GetXmlElementValue.GetElementValue",
+            "XML.GetXmlElementValue.GetElementValueAsNumeric",
+            "XML.GetXmlElementValue.GetElementValueAsBoolean",
+            "XML.GetXmlElementValue.GetElementValueAsDateTime"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Set XML element value",
+          "Id": "SetElementValue",
+          "SelectorIds": [
+            "XML.SetElementValue"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Insert XML element",
+          "Id": "InsertElement",
+          "SelectorIds": [
+            "XML.InsertElement"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Remove XML element",
+          "Id": "RemoveElement",
+          "SelectorIds": [
+            "XML.RemoveElement"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "XML",
+      "Id": "XML",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "If",
+          "Id": "If",
+          "SelectorIds": [
+            "Conditionals.If"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Else if",
+          "Id": "ElseIf",
+          "SelectorIds": [
+            "Conditionals.ElseIf"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Else",
+          "Id": "Else",
+          "SelectorIds": [
+            "Conditionals.Else"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Switch",
+          "Id": "Switch",
+          "SelectorIds": [
+            "Conditionals.Switch"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Case",
+          "Id": "Case",
+          "SelectorIds": [
+            "Conditionals.Case"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Default case",
+          "Id": "CaseDefault",
+          "SelectorIds": [
+            "Conditionals.CaseDefault"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Conditionals",
+      "Id": "Conditionals",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Loop",
+          "Id": "Loop",
+          "SelectorIds": [
+            "Loops.Loop"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "For each",
+          "Id": "Foreach",
+          "SelectorIds": [
+            "Loops.Foreach"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Loop condition",
+          "Id": "While",
+          "SelectorIds": [
+            "Loops.While"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Next loop",
+          "Id": "Continue",
+          "SelectorIds": [
+            "Loops.Continue"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Exit loop",
+          "Id": "Break",
+          "SelectorIds": [
+            "Loops.Break"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Loops",
+      "Id": "Loops",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Label",
+          "Id": "Label",
+          "SelectorIds": [
+            "FlowControl.Label"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Go to",
+          "Id": "GoTo",
+          "SelectorIds": [
+            "FlowControl.GoTo"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Run subflow",
+          "Id": "CallFunction",
+          "SelectorIds": [
+            "FlowControl.CallFunction"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Exit subflow",
+          "Id": "ExitFunction",
+          "SelectorIds": [
+            "FlowControl.ExitFunction"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "On block error",
+          "Id": "Block",
+          "SelectorIds": [
+            "FlowControl.Block"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Stop flow",
+          "Id": "Exit",
+          "SelectorIds": [
+            "FlowControl.Exit"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "End",
+          "Id": "End",
+          "SelectorIds": [
+            "FlowControl.End"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Comment",
+          "Id": "Comment",
+          "SelectorIds": [
+            "FlowControl.Comment"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Get last error",
+          "Id": "GetLastError",
+          "SelectorIds": [
+            "FlowControl.GetLastError"
+          ],
+          "DLPSupport": true
+        },
+        {
+          "FriendlyName": "Wait",
+          "Id": "Wait",
+          "SelectorIds": [
+            "FlowControl.Wait"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Flow control",
+      "Id": "FlowControl",
+      "ModuleSource": "Microsoft"
+    },
+    {
+      "Actions": [
+        {
+          "FriendlyName": "Run desktop flow",
+          "Id": "RunFlow",
+          "SelectorIds": [
+            "External.RunFlow"
+          ],
+          "DLPSupport": true
+        }
+      ],
+      "FriendlyName": "Run flow",
+      "Id": "RunFlow",
+      "ModuleSource": "Microsoft"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+This project's base code is licensed under the MIT license https://github.com/rpapostolis/padcli/blob/main/LICENSE.
+
+Following nuget packages are used, please check their individual license terms:
+
+  CsvHelper  
+    - Nuget package https://www.nuget.org/packages/CsvHelper/
+    - Project https://joshclose.github.io/CsvHelper/
+
+  Microsoft.PowerPlatform.Dataverse.Client
+    - Nuget https://www.nuget.org/packages/Microsoft.PowerPlatform.Dataverse.Client/
+    - Project https://github.com/microsoft/PowerPlatform-DataverseServiceClient/
+
+  System.CommandLine
+    - Nuget https://www.nuget.org/packages/System.CommandLine/
+    - Project https://github.com/dotnet/command-line-api
+
+  Newtonsoft 
+    - Nuget package https://www.nuget.org/packages/Newtonsoft.Json/
+    - Project https://www.newtonsoft.com/json
