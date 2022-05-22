@@ -349,3 +349,5 @@ MigrationBackup/
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
 /.vscode
+/RPACLI/Reporting/padDefinition1.json
+/RPACLI/Reporting/padDefinition2.json

@@ -50,11 +50,11 @@ var sTargetEnvironmentId = new Option<string>(
 var bExportRuns = new Option<bool>(
     "--exportruns",
     getDefaultValue: () => false,
-    description: "Do you want to export desktop flow sessions as well? Please note that the processing time takes significantly longer if you're enabling this option.");
+    description: "Do you want to export Desktop flow sessions as well? Please note that the processing time takes significantly longer if you're enabling this option.");
 var iBatchSize = new Option<int>(
     "--batchsize",
     getDefaultValue: () => 10,
-    description: "The number of desktop flows to be processed per data page.");
+    description: "The number of Desktop flows to be processed per data page.");
 var bContinue = new Option<bool>(
     "--continue",
     getDefaultValue: () => false,
@@ -96,7 +96,7 @@ eFgcolorOption.IsRequired = false;
 bLightModeOption.AddAlias("-x");
 bLightModeOption.IsRequired = false;
 
-var getActions = new Command("get-actions", "This command scans all desktop flows that the specified user has access to in an environment and extracts core desktop flow metadata together with detailed action usage telemetry")
+var getActions = new Command("get-actions", "This command scans all Desktop flows that the specified user has access to in an environment and extracts core Desktop flow metadata together with detailed action usage telemetry")
 {
     sUsername,
     sTarget,
@@ -110,11 +110,11 @@ var getActions = new Command("get-actions", "This command scans all desktop flow
     bLightModeOption
 };
 
-getActions.Description = @"This command scans all desktop flows that the specified user has access to in an environment and extracts core desktop flow metadata together with detailed action usage telemetry.
+getActions.Description = @"This command scans all Desktop flows that the specified user has access to in an environment and extracts core Desktop flow metadata together with detailed action usage telemetry.
 
-With the new PAD action-based DLP preview feature, administrators and CoE teams can now define which action modules and individual actions can be used as part of desktop flows created with Power Automate for Desktop. In the case of policy violations (ie VBScript was allowed but is now being restricted by DLP policy), the platform notifies the maker that this action is not allowed anymore, hence the flow will be suspended.
+With the new PAD action-based DLP preview feature, administrators and CoE teams can now define which action modules and individual actions can be used as part of Desktop flows created with Power Automate for Desktop. In the case of policy violations (ie VBScript was allowed but is now being restricted by DLP policy), the platform notifies the maker that this action is not allowed anymore, hence the flow will be suspended.
 
-This is a great governance improvement and fits perfectly with other DLP features across cloud flows and Power Apps. To minimize the potential impact on already deployed bots, you can use this new CLI tool to extract desktop flow metadata along with action usage telemetry. The results can then be visualized in Power BI Desktop, where proactive impact analysis can be performed on planned DLP changes.";
+This is a great governance improvement and fits perfectly with other DLP features across cloud flows and Power Apps. To minimize the potential impact on already deployed bots, you can use this new CLI tool to extract Desktop flow metadata along with action usage telemetry. The results can then be visualized in Power BI Desktop, where proactive impact analysis can be performed on planned DLP changes.";
 
 getActions.SetHandler((string u, string t, string s, bool er, int b, bool c, string te, string i, ConsoleColor fgColor, bool lightMode) =>
 {
@@ -133,7 +133,7 @@ rootCommand.AddCommand(getActions);
 
 var sDesktopFlowId = new Option<string>(
     "--desktopflowid",
-    description: "The desktop flow id which you wish to process data for.");
+    description: "The Desktop flow id which you wish to process data for.");
 var iTimeframe = new Option<int>(
     "--timeframe",
     getDefaultValue: () => 0,
@@ -163,7 +163,7 @@ var getDesktopFlowRuns = new Command("get-desktop-runs", "Retrieves Desktop flow
     bLightModeOption
 };
 
-getDesktopFlowRuns.Description = @"This command retrieves flow runs for a specific desktop flow and timeframe.";
+getDesktopFlowRuns.Description = @"This command retrieves flow runs for a specific Desktop flow and timeframe.";
 
 getDesktopFlowRuns.SetHandler((string u, string s, string d, int t, bool e, ConsoleColor fgColor, bool lightMode) =>
 {
@@ -183,13 +183,13 @@ rootCommand.AddCommand(getDesktopFlowRuns);
 var sCount = new Option<int>(
     "--count",
     getDefaultValue: () => 0,
-    description: "The number of desktop flow copies to generate");
+    description: "The number of Desktop flow copies to generate");
 
 sCount.AddAlias("-c");
 sCount.Arity = ArgumentArity.ExactlyOne;
 sCount.IsRequired = true;
 
-var cloneDesktopFlows = new Command("clone-desktop-flows", "Clones copies of Desktop flows from a template desktop flow") {
+var cloneDesktopFlows = new Command("clone-desktop-flows", "Clones copies of Desktop flows from a template Desktop flow") {
     sUsername,
     sSourceEnvironmentInstanceUrl,
     sDesktopFlowId, 
@@ -199,7 +199,7 @@ var cloneDesktopFlows = new Command("clone-desktop-flows", "Clones copies of Des
     bLightModeOption
 };
 
-cloneDesktopFlows.Description = @"This command clones copies of Desktop flows from a template desktop flow.";
+cloneDesktopFlows.Description = @"This command clones copies of Desktop flows from a template Desktop flow.";
 
 cloneDesktopFlows.SetHandler((string u, string s, string d, int c, int b, ConsoleColor fgColor, bool lightMode) =>
 {
@@ -213,6 +213,84 @@ cloneDesktopFlows.SetHandler((string u, string s, string d, int c, int b, Consol
 rootCommand.AddCommand(cloneDesktopFlows);
 
 #endregion
+
+#region Command: diff-desktop-flows
+
+var sDesktopFlow1SourceEnvironmentInstanceUrl = new Option<string>(
+    "--file1sourceenvironment",
+    description: "The source environment instance url of the first Desktop flow you want compare with the second one ie https://mysourceorg.crm.dynamics.com .");
+
+var sDesktopFlow2SourceEnvironmentInstanceUrl = new Option<string>(
+    "--file2sourceenvironment",
+    description: "The source environment instance url of the second Desktop flow you want compare with the first one ie https://mysourceorg.crm.dynamics.com .");
+
+var bIsFromSameEnvironment = new Option<bool>(
+    "--sameenvironment",
+    getDefaultValue: () => true,
+    description: "A flag that indicates if the Desktop flows to be compared are from the same Dataverse envrionment.");
+
+var sDesktopFlowId1 = new Option<string>(
+    "--desktopflowid1",
+    description: "The first Desktop flow id that you want to compare the second one with.");
+
+var sDesktopFlowId2 = new Option<string>(
+    "--desktopflowid2",
+    description: "The second Desktop flow id that you want to compare the first one with.");
+
+sDesktopFlow1SourceEnvironmentInstanceUrl.AddAlias("-source1");
+sDesktopFlow1SourceEnvironmentInstanceUrl.Arity = ArgumentArity.ExactlyOne;
+sDesktopFlow1SourceEnvironmentInstanceUrl.IsRequired = true;
+
+sDesktopFlow2SourceEnvironmentInstanceUrl.AddAlias("-source2");
+sDesktopFlow2SourceEnvironmentInstanceUrl.Arity = ArgumentArity.ExactlyOne;
+sDesktopFlow2SourceEnvironmentInstanceUrl.IsRequired = false;
+
+sDesktopFlowId1.AddAlias("-flowid1");
+sDesktopFlowId1.Arity = ArgumentArity.ExactlyOne;
+sDesktopFlowId1.IsRequired = true;
+
+sDesktopFlowId2.AddAlias("-flowid2");
+sDesktopFlowId2.Arity = ArgumentArity.ExactlyOne;
+sDesktopFlowId2.IsRequired = true;
+
+bIsFromSameEnvironment.AddAlias("-s");
+bIsFromSameEnvironment.Arity = ArgumentArity.ExactlyOne;
+bIsFromSameEnvironment.IsRequired = false;
+
+var diffDesktopFlows = new Command("diff-desktop-flows", "Detect differences between two Desktop flows and show an action usage diff in VS Code. This command requires VS Code to be installed and added to the PATH.") {
+    sUsername,
+    sDesktopFlow1SourceEnvironmentInstanceUrl,
+    sDesktopFlow2SourceEnvironmentInstanceUrl,
+    bIsFromSameEnvironment,
+    sDesktopFlowId1,
+    sDesktopFlowId2,
+    eFgcolorOption,
+    bLightModeOption
+};
+
+diffDesktopFlows.Description = @"This command detects differences between two Desktop flows and shows an action usage diff in VS Code.";
+
+diffDesktopFlows.SetHandler((string u, string s1, string s2, bool s, string d1, string d2, ConsoleColor fgColor, bool lightMode) =>
+{
+    Console.BackgroundColor = lightMode ? ConsoleColor.White : ConsoleColor.Black;
+    Console.ForegroundColor = fgColor;
+
+    Handler_Diff_Desktop_Flows.DiffDesktopFlows(u, s1, s2, s, d1, d2);
+
+}, sUsername,
+    sDesktopFlow1SourceEnvironmentInstanceUrl,
+    sDesktopFlow2SourceEnvironmentInstanceUrl,
+    bIsFromSameEnvironment,
+    sDesktopFlowId1,
+    sDesktopFlowId2,
+    eFgcolorOption,
+    bLightModeOption);
+
+rootCommand.AddCommand(diffDesktopFlows);
+
+#endregion
+
+
 
 //Parse the incoming args and invoke the respective handler
 return rootCommand.Invoke(args);
