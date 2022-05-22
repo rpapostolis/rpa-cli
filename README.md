@@ -64,29 +64,31 @@ Options:
   -?, -h, --help  Show help and usage information
 
 Commands:
-  get-actions          This command scans all desktop flows that the specified user has
-                       access to in an environment and extracts core desktop flow metadata
+  get-actions          This command scans all Desktop flows that the specified user has
+                       access to in an environment and extracts core Desktop flow metadata
                        together with detailed action usage telemetry.
 
-                       With the new PAD action-based DLP preview feature, administrators
-                       and CoE teams can now define which action modules and individual
-                       actions can be used as part of desktop flows created with Power
-                       Automate for Desktop. In the case of policy violations (ie VBScript
-                       was allowed but is now being restricted by DLP policy), the platform
-                       notifies the maker that this action is not allowed anymore, hence
-                       saving the flow is not possible.
+                       With the new PAD action-based DLP preview feature, administrators and
+                       CoE teams can now define which action modules and individual actions
+                       can be used as part of Desktop flows created with Power Automate for
+                       Desktop. In the case of policy violations (ie VBScript was allowed
+                       but is now being restricted by DLP policy), the platform notifies the
+                       maker that this action is not allowed anymore, hence the flow will be
+                       suspended.
 
                        This is a great governance improvement and fits perfectly with other
                        DLP features across cloud flows and Power Apps. To minimize the
                        potential impact on already deployed bots, you can use this new CLI
-                       tool to extract desktop flow metadata along with action usage
+                       tool to extract Desktop flow metadata along with action usage
                        telemetry. The results can then be visualized in Power BI Desktop,
                        where proactive impact analysis can be performed on planned DLP
                        changes.
-  get-desktop-runs     This command retrieves flow runs for a specific desktop flow and
+  get-desktop-runs     This command retrieves flow runs for a specific Desktop flow and
                        timeframe.
-  clone-desktop-flows  This command clones copies of Desktop flows from a template desktop
+  clone-desktop-flows  This command clones copies of Desktop flows from a template Desktop
                        flow.
+  diff-desktop-flows   This command detects differences between two Desktop flows and shows
+                       an action usage diff in VS Code.
 
 ```  
 
@@ -220,6 +222,46 @@ Options:
   
 ```  
 
+
+<pre><b>.\RPACLI.exe diff-desktop-flows --help</b></pre>
+
+```
+Description:
+  This command detects differences between two Desktop flows and shows an action usage diff
+  in VS Code.
+
+Usage:
+  RPACLI diff-desktop-flows [options]
+
+Options:
+  -u, --username <username> (REQUIRED)          Username of a highly privileged account
+                                                under which the process will run.
+  -source1, --file1sourceenvironment            The source environment instance url of the
+  <file1sourceenvironment> (REQUIRED)           first Desktop flow you want compare with the
+                                                second one ie
+                                                https://mysourceorg.crm.dynamics.com .
+  -source2, --file2sourceenvironment            The source environment instance url of the
+  <file2sourceenvironment>                      second Desktop flow you want compare with
+                                                the first one ie
+                                                https://mysourceorg.crm.dynamics.com .
+  -s, --sameenvironment                         A flag that indicates if the Desktop flows
+                                                to be compared are from the same Dataverse
+                                                envrionment. [default: True]
+  -flowid1, --desktopflowid1 <desktopflowid1>   The first Desktop flow id that you want to
+  (REQUIRED)                                    compare the second one with.
+  -flowid2, --desktopflowid2 <desktopflowid2>   The second Desktop flow id that you want to
+  (REQUIRED)                                    compare the first one with.
+  -f, --fgcolor                                 Foreground color of text displayed on the
+  <Black|Blue|Cyan|DarkBlue|DarkCyan|DarkGray|  console. [default: Cyan]
+  DarkGreen|DarkMagenta|DarkRed|DarkYellow|Gra
+  y|Green|Magenta|Red|White|Yellow>
+  -x, --light-mode                              Background color of text displayed on the
+                                                console: default is black, light mode is
+                                                white.
+  -?, -h, --help                                Show help and usage information
+  
+```
+
 #### Example usage: Exporting Desktop Flow metadata and action statistics to CSV
 
 <pre><b>.\RPACLI.exe get-actions</b> -u myname@mytenant.onmicrosoft.com -b 10 -t CSV 
@@ -275,7 +317,17 @@ Use -b to change the batch size. The more Desktop flows to export the longer the
 -c 100 -b 10
 </pre>
 
-## 3rd party software packages
+#### Example usage: Compare two Desktop flows from two different environments and show their diffs in VS Code
+
+<pre><b>.\RPACLI.exe diff-desktop-flows</b> -u myname@mytenant.onmicrosoft.com 
+diff-desktop-flows -u apostolis@pasandbox.onmicrosoft.com -s false 
+-source1 https://[myorg1].crm[region].dynamics.com 
+-source2 https://[myorg2].crm[region].dynamics.com 
+-flowid1 999de370-110e-40c6-a276-bd83e89bc07b 
+-flowid2 da736383-3c2e-45b7-81ef-4f131a8e404b
+</pre>
+
+## Solution software packages used
 
 Following nuget packages are used, please check their individual license terms:
 
