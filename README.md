@@ -13,7 +13,7 @@ The RPA CLI command-line tool can be used to extract Desktop flow definitions, a
 
 #### Run it
 
-1. Download the [latest release win-x86](https://github.com/rpapostolis/rpa-cli/releases/download/RPACLI_v0.1/RPACLI_v0.1_win-x86.zip) or [win-x64](https://github.com/rpapostolis/rpa-cli/releases/download/RPACLI_v0.1/RPACLI_v0.1_win-x64.zip)
+1. Download the [latest release](https://github.com/rpapostolis/rpa-cli/releases)
 2. Unzip RPACLI_v[X].[X]_win-x[XX].zip archive
 3. Open a command prompt and navigate to the previously extracted folder
 4. Run one of the [commands below](#example-usage-exporting-desktop-flow-metadata-and-action-statistics-to-csv)
