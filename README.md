@@ -11,6 +11,10 @@ The RPA CLI command-line tool can be used to extract Desktop flow definitions, a
 ### Getting started
 ![RPACLI](https://user-images.githubusercontent.com/10453029/169645497-af04a2d8-867b-4ea4-8c3b-9eeb61e5a451.gif)
 
+### RPACLIE v0.2 includes a new diff function
+
+
+
 #### Run it
 
 1. Download the [latest release](https://github.com/rpapostolis/rpa-cli/releases)
