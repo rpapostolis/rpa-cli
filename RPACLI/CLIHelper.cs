@@ -20,13 +20,13 @@ namespace RPACLI
         /// <param name="username"></param>
         /// <param name="sourceenvinstanceurl"></param>
         /// <returns></returns>
-        public static ServiceClient ConnectToDataverse(string username, string sourceenvinstanceurl)
+        public static ServiceClient ConnectToDataverse(string username, string sourceenvinstanceurl, bool clearScreen = true)
         {
             ServiceClient service = null;
 
             try
             {
-                Console.WriteLine("Connecting to Microsoft Dataverse... Please Check your Web Browser to login.");
+                Console.WriteLine($"Connecting to {sourceenvinstanceurl}... Please Check your Web Browser to login.");
 
                 StringBuilder connectionString = new StringBuilder();
 
@@ -43,8 +43,8 @@ namespace RPACLI
                 
                 if (service.IsReady)
                 {
-                    Console.Clear();
-                    Console.WriteLine($"...successfully connected to {service.ConnectedOrgFriendlyName}!\n");
+                    if(clearScreen)Console.Clear();
+                    Console.WriteLine($"\n...successfully connected to {service.ConnectedOrgFriendlyName}!\n");
                 }
                 else
                 {
@@ -349,6 +349,28 @@ namespace RPACLI
     /// <summary>
     /// DesktopFlowActionUsage
     /// </summary>
+    public class DesktopFlowActionUsageExport
+    {
+        [JsonProperty("Environment Id")]
+        public string environmentid { get; set; }
+        [JsonProperty("Environment URL name")]
+        public string environmenturlname { get; set; }
+        [JsonProperty("Desktop Flow Id")]
+        public string desktopflowid { get; set; }
+        [JsonProperty("Differences found")]
+        public bool desktopflowhasdifferences { get; set; }
+        [JsonProperty("Desktop Flow Name")]
+        public string desktopflowname { get; set; }
+        [JsonProperty("Owner Id")]
+        public string ownerid { get; set; }
+        [JsonProperty("Owner Name")]
+        public string ownername { get; set; }
+        [JsonProperty("Actions")]
+        public List<DesktopFlowActionUsage> actions{ get; set; }
+    }
+        /// <summary>
+        /// DesktopFlowActionUsage
+        /// </summary>
     public class DesktopFlowActionUsage
     {
         public string desktopflowid { get; set; }
