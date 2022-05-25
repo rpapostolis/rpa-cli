@@ -290,7 +290,5 @@ rootCommand.AddCommand(diffDesktopFlows);
 
 #endregion
 
-
-
 //Parse the incoming args and invoke the respective handler
 return rootCommand.Invoke(args);

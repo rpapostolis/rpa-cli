@@ -314,7 +314,7 @@ namespace RPACLI.Handlers
                             usedActions,
                             deskFlowSessions,
                             exportRuns,
-                            recordCount == batchSize ? true : false);
+                            recordCount <= batchSize ? true : false);
                     }
 
                     WriteToProcessingLog(rootExportFolder, deskFlows.Select(d => d.workflowid).ToList(), continueFlag, processedDesktopFlowIdsFromLog);

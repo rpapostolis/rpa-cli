@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <ImplicitUsings>true</ImplicitUsings>
     <TargetFramework>net6.0</TargetFramework>
-    <Version>0.0.1</Version>
+    <Version>0.2.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
