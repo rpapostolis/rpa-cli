@@ -6,7 +6,7 @@ The RPA CLI command-line tool can be used to extract Desktop flow definitions, a
 
 ## Pre-requisites
 - You will need a highly privileged Dataverse environment user account (ie user with Sys Admin role or similar) in order to extract desktop flow and session information environment(s) wide.
-- For customers and partners that have access to the Automation Starter Kit limited private preview program, and planning using the **AutoCoE** target option, make sure you have solution version **0_0_1_4** or higher installed.
+- If you have access to the Automation Starter Kit limited private preview program, and planning to use the **AutoCoE** target option, make sure you have solution version **0_0_1_4** or higher installed.
 
 ### Getting started
 ![RPACLI](https://user-images.githubusercontent.com/10453029/169645497-af04a2d8-867b-4ea4-8c3b-9eeb61e5a451.gif)
